@@ -7,7 +7,7 @@ export const SidebarWrapper = styled(Flex)(
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'space-between',
-    gap: 1,
+    gap: 4,
     bg: 'bg.section',
     px: 3,
     py: 4,
@@ -15,6 +15,15 @@ export const SidebarWrapper = styled(Flex)(
     height: '100vh',
     zIndex: 100,
     boxShadow: 'sidebar',
+  }),
+)
+
+export const NavContainer = styled.nav(
+  css({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: 4,
   }),
 )
 
