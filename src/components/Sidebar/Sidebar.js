@@ -24,7 +24,7 @@ const Sidebar = () => {
           <GrProjects size={24} />
         </NavLink>
       </NavContainer>
-      <Flex column gap={4} alignItems="center">
+      <Flex column gap={4}>
         <a target="_blank" rel="noreferrer">
           <PiTelegramLogoBold size={24} />
         </a>

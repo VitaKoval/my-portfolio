@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <Flex width="100vw" height="100vh" position="relative">
       <Sidebar />
-      <Flex flexGrow={1}>
+      <Flex p={6} pl={16} flex={1}>
         <Outlet />
       </Flex>
     </Flex>
