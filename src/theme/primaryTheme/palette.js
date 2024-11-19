@@ -21,7 +21,6 @@ const palette = {
     section: '#FDFDFF',
     hover: '#F3F5FE',
     inactive: '#E4E6EF',
-    sidebar: '#2B2E45',
     tab: '#50557D',
     primary: '#8F75F9',
     primaryHover: '#7C63DD',

@@ -1,12 +1,14 @@
 import { Flex } from '@/ui'
+import { Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
 import { ThemeProvider } from './theme'
 
 function App() {
   return (
     <ThemeProvider>
-      <Flex height="150px" bg="pink">
-        <h1>Hello World!</h1>
-      </Flex>
+      <Routes>
+        <Route path="/my-portfolio" element={<Layout />} />
+      </Routes>
     </ThemeProvider>
   )
 }
