@@ -25,6 +25,16 @@ export const variants = {
     lineHeight: '1.25',
     fontWeight: 'regular',
   },
+  body18b: {
+    fontSize: 'lg',
+    lineHeight: '1.25',
+    fontWeight: 'semiBold',
+  },
+  body14r: {
+    fontSize: 'xs',
+    lineHeight: '1.25',
+    fontWeight: 'regular',
+  },
   caption: {
     fontSize: 'xs',
     lineHeight: '0.75rem',

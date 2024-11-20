@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
-import { Flex } from '@/ui'
+import { Flex, Img } from '@/ui'
 import BgImage from '@/assets/images/bg-gradient.png'
-import { Img } from '../../ui'
 
 export const IntroWrapper = styled(Flex)(
   css({

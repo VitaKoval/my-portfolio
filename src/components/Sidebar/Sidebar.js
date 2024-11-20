@@ -10,17 +10,17 @@ import { MdOutlineMailOutline } from 'react-icons/md'
 const Sidebar = () => {
   return (
     <SidebarWrapper>
-      <Link to="/my-portfolio/">
+      <Link to="/my-portfolio">
         <Img src={Logo} alt="Logo" width="2.5rem" />
       </Link>
       <NavContainer>
-        <NavLink exact="true" to="/my-portfolio/">
+        <NavLink exact="true" to="/my-portfolio">
           <GrHomeRounded size={24} />
         </NavLink>
-        <NavLink exact="true" to="/my-portfolio/">
+        <NavLink exact="true" to="/my-portfolio/tech">
           <GrTechnology size={24} />
         </NavLink>
-        <NavLink exact="true" to="/my-portfolio/">
+        <NavLink exact="true" to="/my-portfolio">
           <GrProjects size={24} />
         </NavLink>
       </NavContainer>

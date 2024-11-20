@@ -1,8 +1,6 @@
 import React from 'react'
-import { Flex, Img } from '@/ui'
+import { Flex, Heading, Text } from '@/ui'
 import { IoLocationOutline } from 'react-icons/io5'
-import { PiLinkedinLogoBold, PiTelegramLogoBold } from 'react-icons/pi'
-import { MdOutlineMailOutline } from 'react-icons/md'
 import {
   IntroWrapper,
   IntroBlockText,
@@ -10,7 +8,6 @@ import {
   IntroImage,
 } from './Home.styled'
 import WindowImage from '@/assets/images/intro_img.png'
-import { Heading, Text } from '../../ui'
 
 const Home = () => {
   return (
