@@ -1,10 +1,10 @@
 export const fontSizes = [
-  '0.688rem', // xs // 11px
-  '0.75rem', // sm // 12px
-  '0.813rem', // md // 13px
-  '0.875rem', // lg // 14px
-  '0.938rem', // xl // 15px
-  '1rem', // xxl // 16px
+  '0.875rem', // xs // 14px
+  '0.938rem', // sm // 15px
+  '1rem', // md // 16px
+  '1.125rem', // lg // 18px
+  '1.25rem', // xl // 20px
+  '1.75rem', // xxl // 28px
 ]
 
 /*

@@ -9,7 +9,7 @@ const palette = {
     invisible: '#E5E5F0',
     primary: '#8367F6',
     button: '#FFFFFF',
-    active: '#2281F2',
+    active: '#003087',
     success: '#00A556',
     alert: '#F54871',
     warning: '#F48343',

@@ -29,7 +29,8 @@ const variants = {
 }
 
 const Flex = styled(Box).withConfig({
-  shouldForwardProp: (prop) => !['wrap', 'column', 'minHeight'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['wrap', 'column', 'alignItems', 'justifyContent'].includes(prop),
 })(
   ({ wrap, column }) => ({
     display: 'flex',

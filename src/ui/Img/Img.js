@@ -10,10 +10,7 @@ import {
 } from 'styled-system'
 
 const variants = {
-  default: {
-    maxWidth: '100%',
-    objectFit: 'contain',
-  },
+  default: {},
   cover: {
     width: '100%',
     height: '100%',

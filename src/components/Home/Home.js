@@ -1,39 +1,42 @@
 import React from 'react'
-import { Flex } from '../../ui'
+import { Flex, Img } from '@/ui'
 import { IoLocationOutline } from 'react-icons/io5'
 import { PiLinkedinLogoBold, PiTelegramLogoBold } from 'react-icons/pi'
 import { MdOutlineMailOutline } from 'react-icons/md'
-import { IntroWrapper, IntroBlockText, IntroBlockImg } from './Home.styled'
+import {
+  IntroWrapper,
+  IntroBlockText,
+  IntroBlockImg,
+  IntroImage,
+} from './Home.styled'
+import WindowImage from '@/assets/images/intro_img.png'
+import { Heading, Text } from '../../ui'
 
 const Home = () => {
   return (
     <IntroWrapper>
       <IntroBlockText>
         <Flex column gap={6}>
-          <h1>Vita Koval. Front Ent Developer</h1>
-          <p>
+          <Heading variant="h1" secondary="true">
+            <Heading as="span" variant="h1" color="text.active">
+              Vita Koval.
+            </Heading>{' '}
+            Front-End Developer
+          </Heading>
+          <Text>
             I enjoy transforming ideas into code and code into interactive
             interfaces. I strive to balance functionality, user-friendliness,
             and clean code in every project.
-          </p>
-          <Flex gap={1}>
-            <IoLocationOutline />
-            <p>Based in Calgary, AB, Canada</p>
+          </Text>
+          <Flex gap={1} alignItems="center">
+            <IoLocationOutline size={25} />
+            <Text>Based in Calgary, AB, Canada</Text>
           </Flex>
         </Flex>
-        <Flex gap={4}>
-          <a target="_blank" rel="noreferrer">
-            <PiTelegramLogoBold size={24} />
-          </a>
-          <a>
-            <PiLinkedinLogoBold size={24} />
-          </a>
-          <a>
-            <MdOutlineMailOutline size={24} />
-          </a>
-        </Flex>
       </IntroBlockText>
-      <IntroBlockImg>IMAGE</IntroBlockImg>
+      <IntroBlockImg>
+        <IntroImage src={WindowImage} alt="WindowImage" />
+      </IntroBlockImg>
     </IntroWrapper>
   )
 }
