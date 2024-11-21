@@ -22,7 +22,7 @@ const palette = {
     hover: '#F3F5FE',
     inactive: '#E4E6EF',
     tab: '#50557D',
-    primary: '#8F75F9',
+    primary: '#FBDCE2',
     primaryHover: '#7C63DD',
     active: '#F1F8FF',
     hoverAlt: '#F3F5FE',

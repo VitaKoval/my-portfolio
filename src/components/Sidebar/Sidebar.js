@@ -1,40 +1,21 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { Img, Flex } from '@/ui'
-import Logo from '@/assets/favicon.svg'
-import { NavContainer, SidebarWrapper } from './Sidebar.styled'
-import { GrHomeRounded, GrTechnology, GrProjects } from 'react-icons/gr'
-import { PiLinkedinLogoBold, PiTelegramLogoBold } from 'react-icons/pi'
-import { MdOutlineMailOutline } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import { Img, ContactIcons } from '@/ui'
+// import Logo from '@/assets/favicon.svg'
+import { SidebarWrapper } from './Sidebar.styled'
+import SidebarItems from './SidebarItems'
+import { sidebarItems, sidebarContactIcons } from './definitions'
 
 const Sidebar = () => {
   return (
     <SidebarWrapper>
       <Link to="/my-portfolio">
-        <Img src={Logo} alt="Logo" width="2.5rem" />
+        {/* <Img src={Logo} alt="Logo" width="2.5rem" /> */}
       </Link>
-      <NavContainer>
-        <NavLink exact="true" to="/my-portfolio">
-          <GrHomeRounded size={24} />
-        </NavLink>
-        <NavLink exact="true" to="/my-portfolio/tech">
-          <GrTechnology size={24} />
-        </NavLink>
-        <NavLink exact="true" to="/my-portfolio">
-          <GrProjects size={24} />
-        </NavLink>
-      </NavContainer>
-      <Flex column gap={4}>
-        <a target="_blank" rel="noreferrer">
-          <PiTelegramLogoBold size={24} />
-        </a>
-        <a>
-          <PiLinkedinLogoBold size={24} />
-        </a>
-        <a>
-          <MdOutlineMailOutline size={24} />
-        </a>
-      </Flex>
+      {sidebarItems.length && <SidebarItems sidebarItems={sidebarItems} />}
+      {sidebarContactIcons.length && (
+        <ContactIcons contactItems={sidebarContactIcons} />
+      )}
     </SidebarWrapper>
   )
 }

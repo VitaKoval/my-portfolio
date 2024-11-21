@@ -1,5 +1,5 @@
 const shadows = {
-  sidebar: 'rgba(53, 53, 53, 0.333) 0px 0px 8px',
+  sidebar: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
 }
 
 export default shadows
