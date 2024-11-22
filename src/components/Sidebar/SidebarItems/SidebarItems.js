@@ -5,10 +5,10 @@ import { SidebarItemsContainer, SidebarItemContainer } from '../Sidebar.styled'
 const SidebarItems = ({ sidebarItems }) => {
   const location = useLocation()
   const { pathname } = location
-
+  console.log(pathname)
   const index = sidebarItems.findIndex(({ path }) =>
-    path === ''
-      ? pathname === '/my-portfolio'
+    path === '/'
+      ? pathname === '/my-portfolio/'
       : pathname.startsWith(`/my-portfolio${path}`),
   )
 
@@ -25,8 +25,8 @@ const SidebarItems = ({ sidebarItems }) => {
             size={24}
             color={
               index === sidebarItems.findIndex((item) => item.path === path)
-                ? '#50557D'
-                : '#DADDFA'
+                ? '#F8FAFE'
+                : '#9670b8'
             }
           />
         </SidebarItemContainer>

@@ -8,7 +8,7 @@ export const SidebarWrapper = styled(Flex)(
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: 4,
-    bg: 'bg.tab',
+    bg: 'bg.paper',
     px: 3,
     py: 4,
     width: '4.5rem',

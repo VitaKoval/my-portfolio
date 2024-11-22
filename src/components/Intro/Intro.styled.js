@@ -1,7 +1,31 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
-import { Flex, Img } from '@/ui'
+import { Flex, Box, Img } from '@/ui'
 import BgImage from '@/assets/images/bg-gradient.png'
+
+export const IntroSection = styled(Box)(
+  css({
+    position: 'relative',
+    width: '100%',
+    p: '6rem 0 2rem',
+    overflow: 'hidden',
+  }),
+)
+
+export const IntroBgImage = styled(Box)(
+  css({
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    height: '100%',
+    width: '100%',
+    zIndex: '-1',
+    overflow: 'hidden',
+    backgroundImage: `url(${BgImage})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  }),
+)
 
 export const IntroWrapper = styled(Flex)(
   css({
@@ -9,11 +33,6 @@ export const IntroWrapper = styled(Flex)(
     justifyContent: 'space-between',
     gap: '1.938rem',
     flex: 1,
-    p: 6,
-    pl: 16,
-    backgroundImage: `url(${BgImage})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
   }),
 )
 
@@ -31,7 +50,6 @@ export const IntroBlockImg = styled(Flex)(
   css({
     position: 'relative',
     width: '50%',
-    // minHeight: '664px',
     height: '47.5rem',
   }),
 )

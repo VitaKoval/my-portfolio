@@ -23,14 +23,10 @@ export const TechItemWrap = styled(Flex)(
     borderRadius: 'sm',
     width: '17rem',
     height: '5.375rem',
-    transition: '.2s',
+    transition: '.3s',
     '&:hover': {
       cursor: 'pointer',
       filter: 'drop-shadow(5px 10px 15px rgba(8,9,13,.4))',
-      [TechItemImg]: {
-        // transform: 'translate(-1.5rem, -3.5rem) rotate(-20deg)',
-        // filter: 'drop-shadow(5px 10px 15px rgba(8,9,13,.4))',
-      },
     },
   }),
 )
