@@ -6,3 +6,5 @@ export { default as Text } from './Text'
 
 export { default as ContactIcons } from './ContactIcons'
 export { default as PageContainer } from './PageContainer'
+export { default as Badge } from './Badge'
+export { default as Button } from './Button'

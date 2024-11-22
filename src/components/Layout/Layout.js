@@ -5,9 +5,9 @@ import { Flex } from '@/ui'
 
 const Layout = () => {
   return (
-    <Flex width="100vw" height="100vh" position="relative">
+    <Flex position="relative">
       {/* <Sidebar /> */}
-      <Flex flex={1}>
+      <Flex column flex={1}>
         <Outlet />
       </Flex>
     </Flex>

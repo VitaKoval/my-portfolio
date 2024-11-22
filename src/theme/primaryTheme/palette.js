@@ -17,7 +17,7 @@ const palette = {
   },
   bg: {
     paper: '#FFF',
-    table: '#F8FAFE',
+    paperSecondary: '#F5FDFB',
     tableDark: '#EFF3FC',
     section: '#FDFDFF',
     hover: '#F3F5FE',
@@ -37,10 +37,10 @@ const palette = {
   border: {
     iconNormal: '#9C9FC6',
     focus: '#50557D',
-    table: '#F1F1F8',
+    paperSecondary: '#CFF1E1',
     textField: '#E9E9F4',
     section: '#DADDFA',
-    primary: '#8F75F9',
+    primary: '#1C1E34',
     inactive: '#CACCDB',
     invisible: '#FFFFFF',
     active: '#4F98EF',

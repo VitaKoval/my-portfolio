@@ -20,6 +20,11 @@ const style = system({
 const styleText = compose(color, space, typography, layout, shadow, style)
 
 export const variants = {
+  body24b: {
+    fontSize: '1.5rem',
+    lineHeight: '1.025',
+    fontWeight: 'semiBold',
+  },
   body20r: {
     fontSize: 'xl',
     lineHeight: '1.25',
@@ -35,6 +40,12 @@ export const variants = {
     lineHeight: '1.25',
     fontWeight: 'regular',
   },
+  body11r: {
+    fontSize: '0.688rem',
+    lineHeight: '1.025',
+    fontWeight: 'regular',
+  },
+
   caption: {
     fontSize: 'xs',
     lineHeight: '0.75rem',

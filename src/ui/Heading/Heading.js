@@ -19,7 +19,11 @@ export const variants = ({ secondary } = false) => ({
     fontWeight: 'semiBold',
   },
   h2: {},
-  h3: {},
+  h3: {
+    fontSize: '40px',
+    lineHeight: '0.94',
+    fontWeight: 'semiBold',
+  },
   h4: {},
 })
 

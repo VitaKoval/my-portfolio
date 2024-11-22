@@ -11,12 +11,11 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.text.title};
     background-color: ${({ theme }) => theme?.colors?.bg?.white};
     scrollbar-color: ${({ theme }) => theme?.colors?.border?.border} ${({
-      theme,
-    }) => theme?.colors?.border};
+  theme,
+}) => theme?.colors?.border};
     scrollbar-width: thin;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
   }
   * {
     box-sizing: border-box;
