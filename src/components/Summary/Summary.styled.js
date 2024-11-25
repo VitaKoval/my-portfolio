@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
-import { Flex } from '@/ui'
+import { Flex, Text, Heading } from '@/ui'
 import BgSection from '../../assets/images/bg-section.png'
 
 export const SummarySection = styled.section(css({}))
@@ -17,5 +17,11 @@ export const SummaryWrap = styled(Flex)(
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     borderRadius: 'sm',
+    [Text]: {
+      color: 'text.button',
+    },
+    [Heading]: {
+      color: 'text.button',
+    },
   }),
 )
