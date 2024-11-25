@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageContainer, Heading, Text, Flex, Img } from '@/ui'
+import { PageContainer, Heading, Text, Flex, Img, Box } from '@/ui'
 import { WorkExperienceSection } from './WorkExperience.styled'
 import ImgWorkPlace from '../../assets/images/christina-wocintechchat.jpg'
 import ExperienceList from './ExperienceList'
@@ -20,8 +20,10 @@ const WorkExperience = () => {
             </Flex>
             <ExperienceList />
           </Flex>
-          <Flex width="40%" borderRadius="16px" overflow="hidden">
-            <Img src={ImgWorkPlace} alt="work place" variant="contain" />
+          <Flex width="40%">
+            <Box borderRadius="16px" overflow="hidden">
+              <Img src={ImgWorkPlace} alt="work place" variant="contain" />
+            </Box>
           </Flex>
         </Flex>
       </PageContainer>

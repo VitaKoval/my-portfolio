@@ -19,7 +19,7 @@ const MainPage = () => {
         <Paper variant="section" px={10}>
           <Summary />
           <WorkExperience />
-          <Paper variant="block" minHeight="528px" mb="-264px">
+          <Paper variant="block" mb="-264px">
             <Overview />
           </Paper>
         </Paper>

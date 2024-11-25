@@ -30,11 +30,18 @@ const variants = {
 
 const Flex = styled(Box).withConfig({
   shouldForwardProp: (prop) =>
-    !['wrap', 'column', 'alignItems', 'justifyContent'].includes(prop),
+    ![
+      'variant',
+      'wrap',
+      'column',
+      'alignItems',
+      'justifyContent',
+      'borderRadius',
+      'minHeight',
+    ].includes(prop),
 })(
   ({ wrap, column }) => ({
     display: 'flex',
-    ...(minHeight && { minHeight: minHeight }),
     ...(wrap && { flexWrap: 'wrap' }),
     ...(column && { flexDirection: 'column' }),
   }),

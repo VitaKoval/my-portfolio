@@ -55,7 +55,7 @@ export const variants = {
 
 const Text = styled.p.withConfig({
   shouldForwardProp: (prop) =>
-    !['uppercase', 'noWrap', 'preLine'].includes(prop),
+    !['uppercase', 'noWrap', 'preLine', 'variant'].includes(prop),
 })(
   ({ preLine, uppercase, noWrap }) => ({
     textDecoration: 'none',

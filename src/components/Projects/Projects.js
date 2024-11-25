@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, PageContainer, Heading, Button } from '@/ui'
+import { Flex, Box, PageContainer, Heading, Button } from '@/ui'
 import ProjectList from './ProjectList'
 import { ProjectSection } from './Projects.styled'
 
@@ -9,9 +9,12 @@ const Projects = () => {
       <PageContainer>
         <Flex column gap="84px" flex={1}>
           <Flex flex={1} gap={6} justifyContent="space-between">
-            <Heading variant="h3" maxWidth="475px">
-              Here are a few of my favorite projects
-            </Heading>
+            <Box maxWidth="29.688rem">
+              <Heading variant="h3">
+                Here are a few of my favorite projects
+              </Heading>
+            </Box>
+
             <Button title="More projects" />
           </Flex>
           <ProjectList />

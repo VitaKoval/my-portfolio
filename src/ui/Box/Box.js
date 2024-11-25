@@ -27,7 +27,8 @@ const styleProps = compose(
 )
 
 const Box = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['notSelectable', 'maxWidth'].includes(prop),
+  shouldForwardProp: (prop) =>
+    !['notSelectable', 'maxWidth', 'borderRadius'].includes(prop),
 })(
   ({ notSelectable }) => ({
     ...(notSelectable && { userSelect: 'none' }),

@@ -46,9 +46,13 @@ const tagVariants = {
 
 const StyleHeading = compose(space, color, typography, shadow, layout, style)
 
-export const Heading = styled.h3.attrs(({ variant, as, preLine }) => ({
-  as: as ?? tagVariants[variant] ?? 'h3',
-}))(
+export const Heading = styled.h3
+  .withConfig({
+    shouldForwardProp: (prop) => !['variant'].includes(prop),
+  })
+  .attrs(({ variant, as }) => ({
+    as: as ?? tagVariants[variant] ?? 'h3',
+  }))(
   ({ uppercase, preLine }) => ({
     textTransform: uppercase ? 'uppercase' : 'inherit',
     ...(preLine && { whiteSpace: 'pre-line' }),

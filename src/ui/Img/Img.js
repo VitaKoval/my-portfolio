@@ -24,7 +24,9 @@ const variants = {
 
 const styleProps = compose(space, border, layout, position)
 
-const Img = styled.img(
+const Img = styled.img.withConfig({
+  shouldForwardProp: (prop) => !['variant'].includes(prop),
+})(
   styleProps,
   variant({
     variants,
