@@ -24,7 +24,11 @@ export const variants = ({ secondary } = false) => ({
     lineHeight: '0.94',
     fontWeight: 'semiBold',
   },
-  h4: {},
+  h4: {
+    fontSize: '1.25rem',
+    lineHeight: '0.94',
+    fontWeight: 'semiBold',
+  },
 })
 
 const style = system({
