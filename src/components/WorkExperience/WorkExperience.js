@@ -11,7 +11,7 @@ const WorkExperience = () => {
     <WorkExperienceSection>
       <PageContainer>
         <Flex gap={8}>
-          <Flex width="60%" column gap={24}>
+          <Flex width="100%" column gap={24}>
             <Flex column gap={4}>
               <Heading variant="h3">Work Experience</Heading>
               <Box>
@@ -27,22 +27,12 @@ const WorkExperience = () => {
             </Flex>
             <ExperienceList />
           </Flex>
-          <Flex width="40%">
-            <Flex borderRadius="16px" overflow="hidden" column gap={2}>
-              <Img
-                src={ImgWorkPlaceSecond}
-                alt="work place"
-                variant="cover"
-                borderRadius="16px"
-              />
-              <Img
-                src={ImgWorkPlace}
-                alt="work place"
-                variant="cover"
-                borderRadius="16px"
-              />
+          {/* <Flex width="40%">
+            <Flex borderRadius="sm" overflow="hidden" column gap={2}>
+              <Img src={ImgWorkPlaceSecond} alt="work place" variant="cover" />
+              <Img src={ImgWorkPlace} alt="work place" variant="cover" />
             </Flex>
-          </Flex>
+          </Flex> */}
         </Flex>
       </PageContainer>
     </WorkExperienceSection>

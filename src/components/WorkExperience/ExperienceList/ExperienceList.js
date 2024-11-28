@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Img, Heading, Text, Box } from '@/ui'
+import { Flex, Img, Heading, Text, Box, AccentElement } from '@/ui'
 import { ExperienceListWrap } from '../WorkExperience.styled'
 
 const ExperienceList = () => {
@@ -27,34 +27,60 @@ const ExperienceList = () => {
             <Text color="text.tertiary">Apr 2023 - Jul 2024 · 1 yr 4 mos</Text>
             <Text color="text.tertiary">Remote</Text>
           </Flex>
+          <Text color="text.headline">Application Development</Text>
           <Flex as="ul" column gap={1}>
             <Text as="li">
-              Developed and maintained web applications, creating reusable React
-              components and designing user-friendly interfaces.
+              <b>Built and launched scalable React and Next.js applications</b>,
+              improving project delivery speed and code maintainability, which
+              resulted in higher team productivity.
             </Text>
             <Text as="li">
-              Worked with REST APIs and set up route structures to ensure
-              efficient data flow and functionality.
+              <b>Developed applications from scratch</b> using modern frameworks
+              like React and Next.js, solving business challenges by creating
+              custom, high-performance user interfaces.
             </Text>
             <Text as="li">
-              Developed React applications from scratch and worked with existing
-              ones, learning and using modern technologies.
+              <b>Worked with REST APIs</b>, handling data processing and{' '}
+              <b>optimizing API requests</b> to ensure smoother data integration
+              and a more reliable user experience.
             </Text>
             <Text as="li">
-              Developed and supported WordPress projects, implementing new
-              features and integrating CRMs like HubSpot.
+              <b>Created reusable components</b> that reduced development time
+              for future projects, improving overall team efficiency.
+            </Text>
+          </Flex>
+          <Text color="text.headline">Website Development & Support</Text>
+          <Flex as="ul" column gap={3} flex={1}>
+            <Text as="li">
+              <b>Collaborated with cross-functional teams</b> to ensure that
+              website features were aligned with business goals, contributing to
+              improved project delivery timelines.
             </Text>
             <Text as="li">
-              Debugged and tested existing code, improving functionality and
-              user experience.
+              <b>
+                Created pixel-perfect, responsive, and user-friendly layouts
+              </b>{' '}
+              using semantic HTML5, CSS3, and JavaScript, ensuring seamless
+              cross-browser compatibility and optimal performance across all
+              devices, while adhering to best practices for accessibility and
+              SEO.
             </Text>
             <Text as="li">
-              Created and integrated complex animations to enhance visual appeal
-              and user engagement.
+              <b>
+                Developed and integrated custom features for WordPress sites
+              </b>
+              , enhancing user experience and providing tailored solutions to
+              meet client needs.
             </Text>
             <Text as="li">
-              Contributed to documentation aimed at enhancing user experience
-              and collaborated with cross-functional teams.
+              <b>Troubleshot and resolved bugs</b>, addressing critical issues
+              that impacted site functionality and user experience, minimizing
+              downtime and improving overall reliability.
+            </Text>
+            <Text as="li">
+              <b>Enhanced CRM integration</b> (e.g., HubSpot) to streamline
+              client communication and automate workflows, improving client
+              satisfaction and internal efficiency.
             </Text>
           </Flex>
         </Flex>

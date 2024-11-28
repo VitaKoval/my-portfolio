@@ -26,8 +26,8 @@ const ProjectItem = ({ title, subtitle, image, technologies, path, link }) => {
       </Flex>
       {technologies && (
         <Flex wrap gap={1}>
-          {technologies?.map((item) => (
-            <Badge title={item} />
+          {technologies?.map((item, idx) => (
+            <Badge key={idx} title={item} />
           ))}
         </Flex>
       )}

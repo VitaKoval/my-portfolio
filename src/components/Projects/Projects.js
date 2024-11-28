@@ -17,7 +17,7 @@ const Projects = () => {
 
             <Button
               as="a"
-              href="https://github.com/VitaKoval"
+              href="https://github.com/VitaKoval?tab=repositories"
               target="_blank"
               title="More in GitHub"
             />
