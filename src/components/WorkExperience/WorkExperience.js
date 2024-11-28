@@ -1,7 +1,9 @@
 import React from 'react'
 import { PageContainer, Heading, Text, Flex, Img, Box } from '@/ui'
 import { WorkExperienceSection } from './WorkExperience.styled'
-import ImgWorkPlace from '../../assets/images/christina-wocintechchat.jpg'
+import ImgWorkPlace from '../../assets/images/place_1.jpg'
+import ImgWorkPlaceSecond from '../../assets/images/place_2.jpg'
+
 import ExperienceList from './ExperienceList'
 
 const WorkExperience = () => {
@@ -12,18 +14,34 @@ const WorkExperience = () => {
           <Flex width="60%" column gap={24}>
             <Flex column gap={4}>
               <Heading variant="h3">Work Experience</Heading>
-              <Text>
-                Perform a comprehensive compliance assessment for your
-                disclosures and policies delivering precise updates and
-                recommendations to you seconds.
-              </Text>
+              <Box>
+                <Text>
+                  Here is my <b>experience as a Front-End Developer</b>.
+                </Text>
+                <Text>
+                  In addition, I bring valuable skills from other fields, which
+                  enhance my problem-solving, communication, and project
+                  management abilities.
+                </Text>
+              </Box>
             </Flex>
             <ExperienceList />
           </Flex>
           <Flex width="40%">
-            <Box borderRadius="16px" overflow="hidden">
-              <Img src={ImgWorkPlace} alt="work place" variant="contain" />
-            </Box>
+            <Flex borderRadius="16px" overflow="hidden" column gap={2}>
+              <Img
+                src={ImgWorkPlaceSecond}
+                alt="work place"
+                variant="cover"
+                borderRadius="16px"
+              />
+              <Img
+                src={ImgWorkPlace}
+                alt="work place"
+                variant="cover"
+                borderRadius="16px"
+              />
+            </Flex>
           </Flex>
         </Flex>
       </PageContainer>

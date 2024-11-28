@@ -2,9 +2,9 @@ import React from 'react'
 import { ButtonWrap } from './Button.styled'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
-const Button = ({ title, onClick, ...props }) => {
+const Button = ({ title, as = 'button', ...props }) => {
   return (
-    <ButtonWrap onClick={onClick} {...props}>
+    <ButtonWrap as={as} {...props}>
       {title}
       <FaArrowRightLong />
     </ButtonWrap>

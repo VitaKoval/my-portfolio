@@ -1,31 +1,36 @@
 import React from 'react'
 import { Flex, Img, Text, Badge } from '@/ui'
 import { ProjectImageContainer, ProjectItemContainer } from '../Projects.styled'
+import { FaExternalLinkAlt } from 'react-icons/fa'
+import { Link, NavLink } from 'react-router-dom'
 
-const ProjectItem = () => {
+const ProjectItem = ({ title, subtitle, image, technologies, path, link }) => {
   return (
     <ProjectItemContainer>
-      <ProjectImageContainer as="a" href="my-portfolio/project">
-        <Img
-          variant="contain"
-          src="https://res.cloudinary.com/monday-blogs/w_1000,h_599,c_fit/fl_lossy,f_auto,q_auto/wp-blog/2023/03/project-management-dashboard-example.png"
-          alt="project image"
-        />
-      </ProjectImageContainer>
-      <Flex wrap gap={1}>
-        <Badge />
-        <Badge />
-        <Badge />
-        <Badge />
-      </Flex>
+      <NavLink to={path}>
+        <ProjectImageContainer>
+          <Img variant="contain" src={image} alt="project image" />
+        </ProjectImageContainer>
+      </NavLink>
+
       <Flex column gap={3}>
-        <Text variant="body24b">Name</Text>
-        <Text>
-          Safeguard your operations against regulatory pitfalls with proactive
-          insights and automated compliance updates that keep pace with the
-          fast-evolving financial landscape.
-        </Text>
+        {title && (
+          <Flex gap={2} alignItems="center">
+            <Text variant="body24b">{title}</Text>
+            <Link to={link} target="_blank">
+              <FaExternalLinkAlt size={16} color="#003087" cursor="pointer" />
+            </Link>
+          </Flex>
+        )}
+        {subtitle && <Text>{subtitle}</Text>}
       </Flex>
+      {technologies && (
+        <Flex wrap gap={1}>
+          {technologies?.map((item) => (
+            <Badge title={item} />
+          ))}
+        </Flex>
+      )}
     </ProjectItemContainer>
   )
 }

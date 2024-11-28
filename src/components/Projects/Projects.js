@@ -15,7 +15,12 @@ const Projects = () => {
               </Heading>
             </Box>
 
-            <Button title="More projects" />
+            <Button
+              as="a"
+              href="https://github.com/VitaKoval"
+              target="_blank"
+              title="More in GitHub"
+            />
           </Flex>
           <ProjectList />
         </Flex>

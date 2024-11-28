@@ -1,7 +1,7 @@
 const palette = {
   text: {
     title: '#1C1E34',
-    headline: '#787EAC',
+    headline: '#003087',
     body: '#363952',
     secondary: '#727697',
     tertiary: '#989AB5',

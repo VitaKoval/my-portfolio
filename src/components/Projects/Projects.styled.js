@@ -22,6 +22,7 @@ export const ProjectItemContainer = styled(Flex)(
 
 export const ProjectImageContainer = styled(Flex)(
   css({
+    display: 'flex',
     width: '21.25rem',
     height: '21.25rem',
     border: '1px solid',
