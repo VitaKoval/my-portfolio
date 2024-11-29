@@ -1,17 +1,24 @@
 import React from 'react'
-import { Flex, Img, Text, Badge } from '@/ui'
+import { Flex, Img, Text, Badge, Box } from '@/ui'
 import { ProjectImageContainer, ProjectItemContainer } from '../Projects.styled'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
+import BrowserTop from '../../../assets/images/bridge-browser-top.png'
 
 const ProjectItem = ({ title, subtitle, image, technologies, path, link }) => {
   return (
     <ProjectItemContainer>
-      <NavLink to={path}>
+      {/* <NavLink to={path}>
         <ProjectImageContainer>
           <Img variant="contain" src={image} alt="project image" />
         </ProjectImageContainer>
-      </NavLink>
+      </NavLink> */}
+      <Flex column>
+        <Img src={BrowserTop} alt="bridge-browser-top" />
+        <Box width="100%" height="100%">
+          <Img src={image} alt="project image" variant="contain" />
+        </Box>
+      </Flex>
 
       <Flex column gap={3}>
         {title && (
