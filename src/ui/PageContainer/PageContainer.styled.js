@@ -4,6 +4,7 @@ import { Flex } from '@/ui'
 
 const PageContainer = styled(Flex)(
   css({
+    flexDirection: 'column',
     px: '1.875rem',
     width: '100%',
     mx: 'auto',

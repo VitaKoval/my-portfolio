@@ -2,6 +2,21 @@ import React from 'react'
 import { Flex, Box, PageContainer, Heading, Button } from '@/ui'
 import ProjectList from './ProjectList'
 import { ProjectSection } from './Projects.styled'
+import { Slider } from '@/components'
+
+// img
+import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
+
+const slides = [
+  {
+    title: 'Solitics Website',
+    img: SoliticsImg,
+  },
+  { title: 'Puzzle (event app)' },
+  { title: 'Storybook' },
+  { title: 'My Portfolio' },
+  { title: 'Then...' },
+]
 
 const Projects = () => {
   return (
@@ -22,6 +37,7 @@ const Projects = () => {
               title="More in GitHub"
             />
           </Flex>
+          <Slider slides={slides} />
           <ProjectList />
         </Flex>
       </PageContainer>
