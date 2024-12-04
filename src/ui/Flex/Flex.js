@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { minHeight } from 'styled-system'
 import { system, variant } from 'styled-system'
 import Box from '../Box'
 

@@ -17,7 +17,6 @@ export const ButtonWrap = styled(Flex)(
     borderColor: 'border.primary',
     cursor: 'pointer',
     textDecoration: 'none',
-    transition: '0.3s',
     bg: 'bg.paper',
 
     px: 3,

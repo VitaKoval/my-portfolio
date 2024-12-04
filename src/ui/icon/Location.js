@@ -87,4 +87,6 @@ const Location = ({ ...props }) => {
   )
 }
 
+Location.displayName = 'Location'
+
 export default Location

@@ -9,23 +9,27 @@ export const SliderWrapper = styled(Box)(
   }),
 )
 
-export const SliderContainer = styled(Flex)(
+export const SliderContainer = styled(Flex).withConfig({
+  shouldForwardProp: (prop) => !['sliderGap'].includes(prop),
+})(({ sliderGap }) =>
   css({
     pb: '10px',
     height: '540px',
     overflowX: 'auto',
-    gap: 5,
+    gap: sliderGap ? `${sliderGap}px` : 5,
     scrollSnapType: 'x mandatory',
   }),
 )
 
-export const SliderItem = styled(Flex)(
+export const SliderItem = styled(Flex).withConfig({
+  shouldForwardProp: (prop) => !['sliderWidth'].includes(prop),
+})(({ sliderWidth }) =>
   css({
     flexDirection: 'column',
-    width: '500px',
+    width: sliderWidth ? `${sliderWidth}px` : '500px',
     height: '500px',
     borderRadius: 'xl',
-    bg: 'yellow',
+    bg: 'bg.tableDark',
     flexShrink: 0,
     scrollSnapAlign: 'start',
     scrollSnapStop: 'always',
