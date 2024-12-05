@@ -3,9 +3,8 @@ import { Flex, Box, PageContainer, Heading, Button } from '@/ui'
 import ProjectList from './ProjectList'
 import { ProjectSection } from './Projects.styled'
 import { Slider } from '@/components'
-
-const SoliticsImg = require('../../assets/images/Projects/solitics-intro.png')
-const PuzzleImg = require('../../assets/images/Projects/puzzle-intro.png')
+import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
+import PuzzleImg from '@/assets/images/Projects/puzzle-intro.png'
 
 // img
 // import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
