@@ -5,12 +5,12 @@ import { ProjectSection } from './Projects.styled'
 import { Slider } from '@/components'
 
 // img
-import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
+// import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
 
 const slides = [
   {
     title: 'Solitics Website',
-    img: SoliticsImg,
+    img: '',
   },
   { title: 'Puzzle (event app)' },
   { title: 'Storybook' },
