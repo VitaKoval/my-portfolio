@@ -1,9 +1,9 @@
 import React, { useMemo, useRef, useState } from 'react'
-import { Img } from '@/ui'
-import { SliderWrapper, SliderContainer, SliderItem } from './Slider.styled'
-import Scrollbar from './SlideBar'
+import { SliderWrapper, SliderContainer } from './Slider.styled'
+import SlideBar from './SlideBar'
+import Slide from './Slide'
 
-export const SLIDER_WIDTH = 500 // Value should be in pixels (px)
+export const SLIDE_WIDTH = 500 // Value should be in pixels (px)
 export const SLIDER_GAP = 20 // Value should be in pixels (px)
 
 const Slider = ({ slides }) => {
@@ -13,8 +13,13 @@ const Slider = ({ slides }) => {
   const [sliderPosition, setSliderPosition] = useState(0)
 
   const currentSlide = useMemo(() => {
-    return Math.floor(sliderPosition / (SLIDER_WIDTH + SLIDER_GAP))
+    return Math.floor(sliderPosition / (SLIDE_WIDTH + SLIDER_GAP))
   }, [sliderPosition])
+
+  const slidesList =
+    slides.length >= 2
+      ? [...slides, { title: '', img: '', type: 'empty' }]
+      : slides
 
   const handleScroll = (evt) => {
     setSliderPosition(evt.currentTarget.scrollLeft)
@@ -28,21 +33,17 @@ const Slider = ({ slides }) => {
           onScroll={handleScroll}
           sliderGap={SLIDER_GAP}
         >
-          {slides.map(({ title, img }, index) => (
-            <SliderItem
-              as="li"
+          {slidesList?.map(({ title, ...props }, index) => (
+            <Slide
               key={title}
-              sliderWidth={
-                slides.length - 1 === index ? '100%' : `${SLIDER_WIDTH}px`
-              }
-            >
-              <Img src={img} alt="Project image" variant="cover" />
-              {title}
-            </SliderItem>
+              isLastSlide={slidesList.length - 1 === index}
+              title={title}
+              {...props}
+            />
           ))}
         </SliderContainer>
       </SliderWrapper>
-      <Scrollbar sliderRef={sliderRef} currentSlide={currentSlide} />
+      <SlideBar sliderRef={sliderRef} currentSlide={currentSlide} />
     </>
   )
 }

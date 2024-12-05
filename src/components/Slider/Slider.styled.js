@@ -22,18 +22,26 @@ export const SliderContainer = styled(Flex).withConfig({
 )
 
 export const SliderItem = styled(Flex).withConfig({
-  shouldForwardProp: (prop) => !['sliderWidth'].includes(prop),
-})(({ sliderWidth }) =>
+  shouldForwardProp: (prop) => !['slideWidth'].includes(prop),
+})(({ slideWidth, type }) =>
   css({
+    position: 'relative',
     flexDirection: 'column',
-    width: sliderWidth ? sliderWidth : '500px',
+    justifyContent: 'space-between',
+    width: slideWidth ? slideWidth : '500px',
     height: '500px',
     borderRadius: 'xl',
     bg: 'bg.tableDark',
     flexShrink: 0,
     scrollSnapAlign: 'start',
     scrollSnapStop: 'always',
+    p: 5,
+    cursor: 'pointer',
 
-    position: 'relative',
+    ...(type === 'empty' && {
+      bg: 'rgb(239,243,252)',
+      backgroundImage:
+        'linear-gradient(to right, rgba(239,243,252,1) 5%, rgba(255,255,255,1) 28%)',
+    }),
   }),
 )

@@ -1,13 +1,13 @@
 import React, { useCallback, useMemo } from 'react'
 import { Chevron } from '@/ui/icon'
 import { ScrollbarButton, ScrollbarContainer } from './SlideBar.styled'
-import { SLIDER_GAP, SLIDER_WIDTH } from '../Slider'
+import { SLIDER_GAP, SLIDE_WIDTH } from '../Slider'
 
 const scrollToSlide = (slider = null, slideIndex) => {
   if (!slider) return
 
   slider.scrollTo({
-    left: slideIndex * (SLIDER_WIDTH + SLIDER_GAP),
+    left: slideIndex * (SLIDE_WIDTH + SLIDER_GAP),
     behavior: 'smooth',
   })
 }

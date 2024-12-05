@@ -3,6 +3,8 @@ import { Flex, Box, PageContainer, Heading, Button } from '@/ui'
 import ProjectList from './ProjectList'
 import { ProjectSection } from './Projects.styled'
 import { Slider } from '@/components'
+import SoliticsImg from '../../assets/images/Projects/solitics-intro.png'
+import PuzzleImg from '../../assets/images/Projects/puzzle-intro.png'
 
 // img
 // import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
@@ -10,12 +12,15 @@ import { Slider } from '@/components'
 const slides = [
   {
     title: 'Solitics Website',
-    img: '',
+    img: SoliticsImg,
   },
-  { title: 'Puzzle (event app)' },
-  { title: 'Storybook' },
-  { title: 'My Portfolio' },
-  { title: 'Then...' },
+  {
+    title: 'Puzzle (event app)',
+    img: PuzzleImg,
+  },
+  { title: 'Storybook', img: PuzzleImg },
+  // { title: 'My Portfolio' },
+  // { title: 'Then...' },
 ]
 
 const Projects = () => {
