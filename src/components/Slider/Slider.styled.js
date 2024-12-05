@@ -26,7 +26,7 @@ export const SliderItem = styled(Flex).withConfig({
 })(({ sliderWidth }) =>
   css({
     flexDirection: 'column',
-    width: sliderWidth ? `${sliderWidth}px` : '500px',
+    width: sliderWidth ? sliderWidth : '500px',
     height: '500px',
     borderRadius: 'xl',
     bg: 'bg.tableDark',

@@ -1,6 +1,6 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useMemo } from 'react'
 import { Chevron } from '@/ui/icon'
-import { ScrollbarButton, ScrollbarContainer } from './Scrollbar.styled'
+import { ScrollbarButton, ScrollbarContainer } from './SlideBar.styled'
 import { SLIDER_GAP, SLIDER_WIDTH } from '../Slider'
 
 const scrollToSlide = (slider = null, slideIndex) => {
@@ -12,7 +12,16 @@ const scrollToSlide = (slider = null, slideIndex) => {
   })
 }
 
-const Scrollbar = ({ sliderRef, currentSlide }) => {
+const SlideBar = ({ sliderRef, currentSlide }) => {
+  const { isFirstSlide, isLastSlide } = useMemo(() => {
+    const totalSlides = sliderRef.current?.children.length
+
+    return {
+      isFirstSlide: currentSlide === 0,
+      isLastSlide: totalSlides - 1 === currentSlide, // Check the last slide, considering that we added 2 empty slides for the visibility of the last one.
+    }
+  }, [currentSlide, sliderRef])
+
   const goToNextSlide = useCallback(() => {
     scrollToSlide(sliderRef.current, currentSlide + 1)
   }, [currentSlide])
@@ -21,18 +30,16 @@ const Scrollbar = ({ sliderRef, currentSlide }) => {
     scrollToSlide(sliderRef.current, currentSlide - 1)
   }, [currentSlide])
 
-  console.log(sliderRef.current?.children.length)
-
   return (
     <ScrollbarContainer>
-      <ScrollbarButton onClick={goToPrevSlide} disabled={currentSlide === 0}>
+      <ScrollbarButton onClick={goToPrevSlide} disabled={isFirstSlide}>
         <Chevron direction="left" width="24px" height="24px" />
       </ScrollbarButton>
-      <ScrollbarButton onClick={goToNextSlide}>
+      <ScrollbarButton onClick={goToNextSlide} disabled={isLastSlide}>
         <Chevron width="24px" height="24px" />
       </ScrollbarButton>
     </ScrollbarContainer>
   )
 }
 
-export default Scrollbar
+export default SlideBar
