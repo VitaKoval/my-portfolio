@@ -38,6 +38,7 @@ export default defineConfig({
   },
   build: {
     assetsInlineLimit: 0,
+    assetsDir: 'assets',
   },
   resolve: {
     alias: {
