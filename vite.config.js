@@ -36,6 +36,9 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    assetsInlineLimit: 0,
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
