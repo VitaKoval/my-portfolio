@@ -37,6 +37,15 @@ export const SliderItem = styled(Flex).withConfig({
     scrollSnapStop: 'always',
     p: 5,
     cursor: 'pointer',
+    ['img']: {
+      transition: '0.3s',
+    },
+    '&:hover': {
+      ['img']: {
+        transform: 'scale(1.01)',
+        filter: 'drop-shadow(rgba(8, 9, 13, 0.4) 5px 10px 15px)',
+      },
+    },
 
     ...(type === 'empty' && {
       bg: 'rgb(239,243,252)',

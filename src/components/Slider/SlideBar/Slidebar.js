@@ -18,7 +18,7 @@ const SlideBar = ({ sliderRef, currentSlide }) => {
 
     return {
       isFirstSlide: currentSlide === 0,
-      isLastSlide: totalSlides - 1 === currentSlide, // Check the last slide, considering that we added 2 empty slides for the visibility of the last one.
+      isLastSlide: totalSlides - 2 === currentSlide, // Check the last slide, considering that we added 2 empty slides for the visibility of the last one.
     }
   }, [currentSlide, sliderRef])
 

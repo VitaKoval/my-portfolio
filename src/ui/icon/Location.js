@@ -29,7 +29,7 @@ const Location = ({ ...props }) => {
           }
 
           .svg-gravitation {
-            animation: svg-gravitation-animate 8s ease-in-out infinite;
+            animation: svg-gravitation-animate 6s ease-in-out infinite;
           }
         `}
       </style>

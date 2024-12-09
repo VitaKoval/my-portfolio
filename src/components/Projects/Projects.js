@@ -18,8 +18,8 @@ const slides = [
     title: 'Puzzle (event app)',
     img: PuzzleImg,
   },
-  { title: 'Storybook', img: PuzzleImg },
-  // { title: 'My Portfolio' },
+  { title: 'Dashboard', img: '' },
+  { title: 'My Portfolio' },
   // { title: 'Then...' },
 ]
 
