@@ -6,7 +6,7 @@ import Slide from './Slide'
 export const SLIDE_WIDTH = 500 // Value should be in pixels (px)
 export const SLIDER_GAP = 20 // Value should be in pixels (px)
 
-const Slider = ({ slides }) => {
+const Slider = ({ slides, onClick }) => {
   if (!slides) return
 
   const sliderRef = useRef(null)
@@ -38,6 +38,7 @@ const Slider = ({ slides }) => {
               key={title}
               isLastSlide={slidesList.length - 1 === index}
               title={title}
+              onClick={onClick}
               {...props}
             />
           ))}

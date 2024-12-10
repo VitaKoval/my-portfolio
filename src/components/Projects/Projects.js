@@ -5,25 +5,45 @@ import { ProjectSection } from './Projects.styled'
 import { Slider } from '@/components'
 import SoliticsImg from '@/assets/images/solitics-intro.png'
 import PuzzleImg from '@/assets/images/puzzle-intro.png'
+import { useNavigate } from 'react-router-dom'
 
 // img
 // import SoliticsImg from '@/assets/images/Projects/solitics-intro.png'
 
+const PROJECT_PATH = '/my-portfolio/:id'
+
 const slides = [
   {
+    id: 'solitics',
     title: 'Solitics Website',
     img: SoliticsImg,
   },
   {
+    id: 'puzzle',
     title: 'Puzzle (event app)',
     img: PuzzleImg,
   },
-  { title: 'Dashboard', img: '' },
-  { title: 'My Portfolio' },
+  {
+    id: 'dashboard',
+    title: 'Dashboard',
+    img: '',
+  },
+  {
+    id: 'portfolio',
+    title: 'My Portfolio',
+    img: '',
+  },
   // { title: 'Then...' },
 ]
 
 const Projects = () => {
+  const navigate = useNavigate()
+
+  const handleSlideNavigate = (id) => {
+    navigate(PROJECT_PATH.replace(':id', id), {
+      withoutConfirm: true,
+    })
+  }
   return (
     <ProjectSection>
       <PageContainer>
@@ -42,7 +62,7 @@ const Projects = () => {
               title="More in GitHub"
             />
           </Flex>
-          <Slider slides={slides} />
+          <Slider slides={slides} onClick={handleSlideNavigate} />
           <ProjectList />
         </Flex>
       </PageContainer>
