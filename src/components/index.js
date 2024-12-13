@@ -7,5 +7,6 @@ export { default as Spinner } from './Spinner'
 export { default as Summary } from './Summary'
 export { default as WorkExperience } from './WorkExperience'
 export { default as Overview } from './Overview'
+export { default as ContentSection } from './ContentSection'
 
 export { default as Slider } from './Slider'

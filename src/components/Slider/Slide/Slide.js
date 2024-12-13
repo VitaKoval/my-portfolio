@@ -4,7 +4,6 @@ import { SLIDE_WIDTH } from '../Slider'
 import { SliderItem } from '../Slider.styled'
 
 const Slide = ({ onClick, isLastSlide, id, title, img, type, ...props }) => {
-  console.log(id)
   return (
     <SliderItem
       as="li"

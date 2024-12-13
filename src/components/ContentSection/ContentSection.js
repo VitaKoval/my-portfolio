@@ -10,20 +10,21 @@ import {
   TextContainer,
 } from './ContentSection.styled'
 import { PageContainer, Flex, Heading, Text, Badge } from '@/ui'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { MdOutlineArrowBackIos } from 'react-icons/md'
 import { FaLink } from 'react-icons/fa'
 
-const ContentSection = ({ contentData, type }) => {
-  const { id, title, subtitle, img, technologies, link, textHTML, isReverse } =
+const ContentSection = ({ contentData }) => {
+  const { title, subtitle, img, technologies, type, textHTML, isReverse } =
     contentData
 
   const navigate = useNavigate()
-  console.log(contentData)
-  // type = ['intro', 'default', 'reverse']
+  // type = ['intro', 'primary', 'secondary', 'summary']
 
   return (
-    <ContentSectionWrapper>
+    <ContentSectionWrapper
+      bg={!isReverse || type === 'intro' ? 'transparent' : 'bg.tableDark'}
+    >
       {type === 'intro' && <ContentSectionBgImage />}
       <PageContainer>
         <ContentContainer isReverse={isReverse}>
@@ -33,7 +34,8 @@ const ContentSection = ({ contentData, type }) => {
                 <ActionButton
                   onClick={() => navigate(-1, { withoutConfirm: true })}
                 >
-                  <MdOutlineArrowBackIos /> <Text variant="body14r">Back</Text>{' '}
+                  <MdOutlineArrowBackIos />{' '}
+                  <Text variant="body14r">Go Back</Text>{' '}
                 </ActionButton>
               )}
               <Heading variant="h1" secondary="true">
@@ -41,7 +43,11 @@ const ContentSection = ({ contentData, type }) => {
               </Heading>
               {subtitle && <Text>{subtitle}</Text>}
               {textHTML && (
-                <Text dangerouslySetInnerHTML={{ __html: textHTML }} />
+                <Flex
+                  gap={3}
+                  column
+                  dangerouslySetInnerHTML={{ __html: textHTML }}
+                />
               )}
               {technologies && (
                 <Flex wrap gap={1} width="80%">
@@ -52,7 +58,7 @@ const ContentSection = ({ contentData, type }) => {
               )}
               {type === 'intro' && (
                 <LinkButton to="https://solitics.com/" target="_blank">
-                  Link <FaLink />
+                  Website <FaLink />
                 </LinkButton>
               )}
             </Flex>

@@ -5,12 +5,13 @@ import BgImg from '@/assets/images/bg-gradient.png'
 import Text from '../../ui/Text/Text'
 import { Link } from 'react-router-dom'
 
-export const ContentSectionWrapper = styled.section(
+export const ContentSectionWrapper = styled.section(({ bg }) =>
   css({
     position: 'relative',
     width: '100%',
-    p: '3rem 0 2rem',
+    py: '4rem',
     overflow: 'hidden',
+    bg: bg,
   }),
 )
 
@@ -49,6 +50,35 @@ export const TextContainer = styled(Flex)(({ variant }) =>
     ...(variant === 'intro' && {
       width: '50%',
     }),
+    ...(variant === 'primary' && {
+      width: '60%',
+    }),
+    ['p']: {
+      fontSize: '1.25rem',
+      lineHeight: '1.25',
+      fontWeight: 'regular',
+      padding: 0,
+      margin: 0,
+      ['span']: {
+        color: 'text.headline',
+      },
+    },
+    ['h2']: {
+      fontSize: '2rem',
+      lineHeight: '0.94',
+      fontWeight: 'semiBold',
+      color: 'text.title',
+      padding: 0,
+      margin: 0,
+    },
+    ['h3']: {
+      fontSize: '1.5rem',
+      lineHeight: '0.94',
+      fontWeight: 'semiBold',
+      color: 'text.title',
+      padding: 0,
+      margin: 0,
+    },
   }),
 )
 
@@ -70,7 +100,7 @@ export const ImageStyle = styled(Img)(
 export const ActionButton = styled.button(
   css({
     position: 'absolute',
-    top: '-2rem',
+    top: '-3rem',
     left: 0,
     cursor: 'pointer',
     border: 'none',

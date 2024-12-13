@@ -56,7 +56,7 @@ export const SkillItem = styled(Flex)(
     '&:before': {
       content: '""',
       position: 'absolute',
-      bottom: '50px',
+      top: '12px',
       left: '12px',
       width: '50px',
       height: '50px',
