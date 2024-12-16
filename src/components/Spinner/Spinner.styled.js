@@ -28,20 +28,6 @@ export const SpinnerContainer = styled(Box)(
       '15%': { borderRightColor: 'rgba(0,0,0,0.4)' },
       '20%': { borderRightColor: 'rgba(0,0,0,0.6)' },
       '25%': { borderRightColor: 'rgba(0,0,0,0.4)' },
-      //   30% {border-right-color: rgba(0,0,0,0.6)}
-      //   35% {border-right-color: rgba(0,0,0,0.4)}
-      //   40% {border-right-color: rgba(0,0,0,0.6)}
-      //   45% {border-right-color: rgba(0,0,0,0.4)}
-      //   50% {border-right-color: rgba(0,0,0,0.6)}
-      //   55% {border-right-color: rgba(0,0,0,0.4)}
-      //   60% {border-right-color: rgba(0,0,0,0.6)}
-      //   65% {border-right-color: rgba(0,0,0,0.4)}
-      //   70% {border-right-color: rgba(0,0,0,0.6)}
-      //   75% {border-right-color: rgba(0,0,0,0.4)}
-      //   80% {border-right-color: rgba(0,0,0,0.6)}
-      //   85% {border-right-color: rgba(0,0,0,0.4)}
-      //   90% {border-right-color: rgba(0,0,0,0.6)}
-      //   95% {border-right-color: rgba(0,0,0,0.4)}
       '100%': {
         transform: 'rotate(360deg)',
         borderRight: '9px solid rgba(0,0,0,0.6)',

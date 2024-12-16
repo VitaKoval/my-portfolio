@@ -10,3 +10,4 @@ export { default as Overview } from './Overview'
 export { default as ContentSection } from './ContentSection'
 
 export { default as Slider } from './Slider'
+export { default as RouteComponent } from './RouteComponent'

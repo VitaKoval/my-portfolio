@@ -14,14 +14,12 @@ const Slide = ({ onClick, isLastSlide, id, title, img, type, ...props }) => {
       {!isLastSlide ? (
         <Img src={img} alt="Project image" variant="contain" />
       ) : (
-        <Flex flex="1" alignItems="center">
+        <Flex flex="1">
           <Text>...to be continued</Text>
         </Flex>
       )}
 
-      <Text fontWeight="bold" textAlign="center">
-        {title}
-      </Text>
+      <Text fontWeight="bold">{title}</Text>
     </SliderItem>
   )
 }

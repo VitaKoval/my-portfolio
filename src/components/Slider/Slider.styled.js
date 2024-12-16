@@ -28,6 +28,7 @@ export const SliderItem = styled(Flex).withConfig({
     position: 'relative',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    alignItems: 'center',
     width: slideWidth ? slideWidth : '500px',
     height: '500px',
     borderRadius: 'xl',
