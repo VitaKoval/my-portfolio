@@ -17,6 +17,8 @@ const slides = [
     id: 'solitics',
     title: 'Solitics Website',
     img: SoliticsImg,
+    link: 'https://solitics.com/',
+    gitHubLink: '',
     technologies: [
       'HTML',
       'CSS',
@@ -80,7 +82,7 @@ const Projects = () => {
             />
           </Flex>
           <Slider slides={slides} onClick={handleSlideNavigate} />
-          <ProjectList />
+          {/* <ProjectList /> */}
         </Flex>
       </PageContainer>
     </ProjectSection>

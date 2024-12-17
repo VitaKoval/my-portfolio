@@ -13,6 +13,8 @@ const Slide = ({
   img,
   type,
   technologies,
+  link,
+  gitHubLink,
   ...props
 }) => {
   return (
@@ -30,19 +32,23 @@ const Slide = ({
             <Text>...to be continued</Text>
           </Flex>
         )}
-        <TechnologiesList wrap gap={2}>
-          {technologies?.map((tech) => (
-            <Badge title={tech} />
-          ))}
-        </TechnologiesList>
-        <LinkList>
-          <Flex>
-            <FaExternalLinkSquareAlt />
-          </Flex>
-          <Flex>
-            <FaGithubSquare />
-          </Flex>
-        </LinkList>
+        {technologies && (
+          <TechnologiesList wrap gap={2}>
+            {technologies.map((tech) => (
+              <Badge title={tech} />
+            ))}
+          </TechnologiesList>
+        )}
+        {(link || gitHubLink) && (
+          <LinkList>
+            <Flex>
+              <FaExternalLinkSquareAlt />
+            </Flex>
+            <Flex>
+              <FaGithubSquare />
+            </Flex>
+          </LinkList>
+        )}
       </Flex>
 
       <Text fontWeight="bold">{title}</Text>
