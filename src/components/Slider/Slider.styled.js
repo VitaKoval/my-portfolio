@@ -21,6 +21,38 @@ export const SliderContainer = styled(Flex).withConfig({
   }),
 )
 
+export const TechnologiesList = styled(Flex)(
+  css({
+    position: 'absolute',
+    bottom: 0,
+    flexWrap: 'wrap',
+    gap: 2,
+    transform: 'scale(0)',
+    transition: '0.3s',
+  }),
+)
+export const LinkList = styled(Flex)(
+  css({
+    position: 'absolute',
+    top: '50%',
+    left: 0,
+    gap: 2,
+    transform: 'scale(0) translateY(-50%)',
+    transition: '0.3s',
+    flexDirection: 'column',
+    [Flex]: {
+      alignItems: 'center',
+      justifyContent: 'center',
+
+      bg: 'white',
+      p: 2,
+      borderRadius: '50%',
+      width: '32px',
+      height: '32px',
+    },
+  }),
+)
+
 export const SliderItem = styled(Flex).withConfig({
   shouldForwardProp: (prop) => !['slideWidth'].includes(prop),
 })(({ slideWidth, type }) =>
@@ -43,8 +75,14 @@ export const SliderItem = styled(Flex).withConfig({
     },
     '&:hover': {
       ['img']: {
-        transform: 'scale(1.01)',
-        filter: 'drop-shadow(rgba(8, 9, 13, 0.4) 5px 10px 15px)',
+        transform: 'scale(0.8) translate(0, -12%)',
+        // filter: 'drop-shadow(rgba(8, 9, 13, 0.4) 5px 10px 15px)',
+      },
+      [TechnologiesList]: {
+        transform: 'scale(1)',
+      },
+      [LinkList]: {
+        transform: 'scale(1)',
       },
     },
 

@@ -32,7 +32,7 @@ export const ProjectImageContainer = styled(Flex)(
     transition: '.3s',
     '&:hover': {
       cursor: 'pointer',
-      filter: 'drop-shadow(5px 10px 15px rgba(8,9,13,.4))',
+      // filter: 'drop-shadow(5px 10px 15px rgba(8,9,13,.4))',
     },
   }),
 )

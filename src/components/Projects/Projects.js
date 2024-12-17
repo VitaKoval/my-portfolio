@@ -17,11 +17,28 @@ const slides = [
     id: 'solitics',
     title: 'Solitics Website',
     img: SoliticsImg,
+    technologies: [
+      'HTML',
+      'CSS',
+      'SASS',
+      'JavaScript',
+      'WordPress',
+      'PHP',
+      'jQuery',
+    ],
   },
   {
     id: 'puzzle',
     title: 'Puzzle (event app)',
     img: PuzzleImg,
+    technologies: [
+      'React',
+      'Styled-Components',
+      'Axios',
+      'TanStack Query',
+      'PropTypes',
+      'Recoil',
+    ],
   },
   {
     id: 'dashboard',
