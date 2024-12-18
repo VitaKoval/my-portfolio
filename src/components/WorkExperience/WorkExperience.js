@@ -1,8 +1,6 @@
 import React from 'react'
 import { PageContainer, Heading, Text, Flex, Img, Box } from '@/ui'
 import { WorkExperienceSection } from './WorkExperience.styled'
-import ImgWorkPlace from '../../assets/images/place_1.jpg'
-import ImgWorkPlaceSecond from '../../assets/images/place_2.jpg'
 
 import ExperienceList from './ExperienceList'
 
@@ -27,12 +25,6 @@ const WorkExperience = () => {
             </Flex>
             <ExperienceList />
           </Flex>
-          {/* <Flex width="40%">
-            <Flex borderRadius="sm" overflow="hidden" column gap={2}>
-              <Img src={ImgWorkPlaceSecond} alt="work place" variant="cover" />
-              <Img src={ImgWorkPlace} alt="work place" variant="cover" />
-            </Flex>
-          </Flex> */}
         </Flex>
       </PageContainer>
     </WorkExperienceSection>
