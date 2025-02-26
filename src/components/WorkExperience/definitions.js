@@ -23,18 +23,11 @@ export const experience = [
           maintenance issues by 15%, which boosted team productivity.
         </li>
         <li>
-          Optimized API requests using Axios with REST APIs, reducing data
-          processing time by 20%, and ensuring smoother data integration and
-          reliable user experiences.
+          Optimized API requests using React Query by configuring caching, data updates, and refetching only when needed. This reduced the number of server requests, decreased load, and improved application performance.
         </li>
         <li>
           Built reusable components with Styled-Components, reducing development
           time for future projects by 30% and improving team efficiency.
-        </li>
-        <li>
-          Used React Hook Form and TanStack Query to simplify form validation
-          and state management, enhancing overall application performance and
-          reliability.
         </li>
         <li>
           Created pixel-perfect, responsive layouts using HTML5, CSS3 (SCSS),
