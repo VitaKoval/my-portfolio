@@ -39,13 +39,15 @@ export const NavBarNav = styled.nav(
   css({
     display: 'flex',
     flex: '1 1',
+    gap: '1rem',
     alignItems: 'center',
     maxWidth: '1400px',
   }),
 )
 
-export const NavBarLinks = styled(Flex)(
+export const NavBarLinks = styled.div(
   css({
+    display: ['none', 'none', 'flex'],
     alignItems: 'center',
     width: '100%',
     gap: '1.5rem',
@@ -70,8 +72,9 @@ export const NavListItem = styled(Text)(
 //     position: relative;
 
 // NavBarHeaderButtons
-export const NavButtonsWrap = styled(Flex)(
+export const NavButtonsWrap = styled.div(
   css({
+    display: ['none', 'none', 'flex'],
     alignItems: 'center',
     gap: '12px',
     a: {

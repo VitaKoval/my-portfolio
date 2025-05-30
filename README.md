@@ -11,3 +11,4 @@ Dependencies:
 
 - Styled-components [styled-components.com](https://styled-components.com/docs/basics#installation) + Styled-system
 - PropTypes [www.npmjs.com/package/prop-types] (https://www.npmjs.com/package/prop-types)
+- React-icons [https://react-icons.github.io/react-icons/]
