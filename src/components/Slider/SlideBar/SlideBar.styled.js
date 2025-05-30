@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
-import { Flex, Box } from '@/ui'
+import { Flex } from '@/ui'
 
 export const ScrollbarContainer = styled(Flex)(
   css({

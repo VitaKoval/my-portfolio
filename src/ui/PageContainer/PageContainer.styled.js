@@ -10,11 +10,11 @@ const PageContainer = styled(Flex)(
     mx: 'auto',
     maxWidth: '100%',
     '@media screen and (min-width: 1240px)': {
-      maxWidth: '1180px',
-      px: '16px',
+      maxWidth: '73.75rem',
+      px: '1rem',
     },
     '@media screen and (max-width: 1024px)': {
-      maxWidth: '960px',
+      maxWidth: '60rem',
     },
   }),
 )

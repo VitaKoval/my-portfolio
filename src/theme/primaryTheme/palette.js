@@ -1,5 +1,14 @@
 const palette = {
+  foreground: '#fff',
+  accents2: '#333333',
+  accents5: '#888888',
+  accents8: '#fafafa',
   text: {
+    //next's theme
+    white: '#fff',
+    gradient: 'linear-gradient(180deg, #ffffff, #adadad)',
+
+    //old theme
     title: '#1C1E34',
     headline: '#003087',
     body: '#363952',
@@ -16,6 +25,11 @@ const palette = {
     warning: '#F48343',
   },
   bg: {
+    //next's theme
+    dark: 'rgba(0, 0, 0, .8)',
+    background: '#000',
+
+    //old theme
     paper: '#FFF',
     paperSecondary: '#F5FDFB',
     tableDark: '#EFF3FC',
@@ -35,6 +49,12 @@ const palette = {
     warning: '#FFF6ED',
   },
   border: {
+    //next's theme
+    dark: 'rgba(0, 0, 0, .8)',
+    background: '#000',
+
+    //old theme
+
     iconNormal: '#9C9FC6',
     focus: '#50557D',
     paperSecondary: '#CFF1E1',

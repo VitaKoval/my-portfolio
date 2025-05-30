@@ -9,13 +9,14 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: ${primaryFontFamily};
     color: ${({ theme }) => theme.colors.text.title};
-    background-color: ${({ theme }) => theme?.colors?.bg?.white};
+    background-color: ${({ theme }) => theme?.colors?.bg?.background};
     scrollbar-color: ${({ theme }) => theme?.colors?.border?.border} ${({
   theme,
 }) => theme?.colors?.border};
     scrollbar-width: thin;
     height: 100vh;
     width: 100vw;
+    scroll-behavior: smooth;
   }
   * {
     box-sizing: border-box;

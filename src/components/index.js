@@ -11,3 +11,4 @@ export { default as ContentSection } from './ContentSection'
 
 export { default as Slider } from './Slider'
 export { default as RouteComponent } from './RouteComponent'
+export { default as Header } from './Header'

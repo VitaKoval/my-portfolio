@@ -41,7 +41,6 @@ export const nativeNavigate = router.navigate
 window.reactRouter = router
 
 const Router = () => {
-  console.log('Router')
   return <RouterProvider router={router} />
 }
 

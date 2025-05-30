@@ -20,7 +20,7 @@ const Summary = () => {
   }, [skillsList])
 
   return (
-    <SummarySection>
+    <SummarySection id="section__about">
       <PageContainer>
         <SummaryWrap>
           <SkillItem>

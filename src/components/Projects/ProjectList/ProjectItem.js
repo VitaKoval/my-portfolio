@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, Img, Text, Badge, Box } from '@/ui'
 import { ProjectImageContainer, ProjectItemContainer } from '../Projects.styled'
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import BrowserTop from '../../../assets/images/bridge-browser-top.png'
 
 const ProjectItem = ({ title, subtitle, image, technologies, path, link }) => {
