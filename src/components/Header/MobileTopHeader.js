@@ -25,7 +25,12 @@ export default function MobileTopHeader() {
       <MobileMenuWrapper isOpen={isMenuOpen}>
         <MobileMenuContainer>
           {navList.map(({ name, link }) => (
-            <NavListItem key={name} as="a" href={link}>
+            <NavListItem
+              key={name}
+              as="a"
+              href={link}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {name}
             </NavListItem>
           ))}
