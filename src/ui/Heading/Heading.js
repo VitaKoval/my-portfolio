@@ -57,11 +57,11 @@ export const Heading = styled.h3
     textTransform: uppercase ? 'uppercase' : 'inherit',
     ...(preLine && { whiteSpace: 'pre-line' }),
   }),
-  css({
-    color: 'text.title',
+  css(({ color }) => ({
+    color: 'foreground',
     padding: 0,
     margin: 0,
-  }),
+  })),
   ({ secondary }) =>
     variant({
       prop: 'variant',

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
 import { Flex, Text } from '@/ui'
-import { Link } from 'react-router-dom'
 
 export const HeaderWrap = styled(Flex)(
   css({
@@ -21,16 +20,6 @@ export const HeaderWrap = styled(Flex)(
     color: 'foreground',
     borderWidth: '0',
     borderColor: 'border',
-
-    // background: 'linear-gradient(180deg, #ffffff, #adadad)',
-    // '-webkit-background-clip': 'text',
-    // '-webkit-text-fill-color': 'transparent',
-    // fontWeight: '800',
-    // fontSize: 'max(48px, min(5vw, 76px))',
-    // lineHeight: '1',
-    // letterSpacing: '-.05em',
-    // padding: '24px',
-    // position: 'relative',
   }),
 )
 
@@ -56,6 +45,7 @@ export const NavBarLinks = styled.div(
 
 export const NavListItem = styled(Text)(
   css({
+    p: '10px 8px',
     transition: 'color 0.2s ease',
     fontSize: '14px',
     borderRadius: '2px',
@@ -65,16 +55,10 @@ export const NavListItem = styled(Text)(
     },
   }),
 )
-// transition: color .15s ease;
-//     font-size: 14px;
-//     border-radius: 2px;
-//     color: var(--accents-5);
-//     position: relative;
 
 // NavBarHeaderButtons
-export const NavButtonsWrap = styled.div(
+export const NavButtonsWrap = styled(Flex)(
   css({
-    display: ['none', 'none', 'flex'],
     alignItems: 'center',
     gap: '12px',
     a: {
@@ -100,3 +84,43 @@ export const NavButtonsWrap = styled.div(
     },
   }),
 )
+
+// MobileTopHeader
+export const MobBarLinks = styled.div(
+  css({
+    display: ['flex', 'flex', 'none'],
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    gap: '1.5rem',
+    height: '64px',
+  }),
+)
+
+export const MobileMenuWrapper = styled.div(({ isOpen }) =>
+  css({
+    position: 'absolute',
+    top: '76px',
+    left: '0',
+    right: '0',
+    bottom: '0',
+    zIndex: '1000',
+    transition: 'transform .3s ease',
+    transform: isOpen ? 'translate(0, 0)' : 'translate(100vw, 0)',
+  }),
+)
+
+export const MobileMenuContainer = styled(Flex)(
+  css({
+    flexDirection: 'column',
+    px: '32px',
+    width: '100vw',
+    maxWidth: '100vw',
+    height: '100vh',
+    bg: 'background',
+    overflowY: 'scroll',
+    '-webkit-overflow-scrolling': 'touch',
+  }),
+)
+
+export const MenuList = styled

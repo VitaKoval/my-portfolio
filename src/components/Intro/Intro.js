@@ -19,7 +19,7 @@ const Intro = () => {
         <IntroWrapper>
           <IntroBlockText>
             <Flex column gap={6}>
-              <Heading variant="h1" secondary="true">
+              <Heading variant="h1" secondary="true" color="gradient">
                 <Heading as="span" variant="h1" color="text.headline">
                   <AccentElement>Vita Koval.</AccentElement>
                 </Heading>{' '}

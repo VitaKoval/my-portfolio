@@ -4,6 +4,8 @@ export { default as Img } from './Img'
 export { default as Heading } from './Heading'
 export { default as Text } from './Text'
 
+export { default as Logo } from './Logo'
+
 export { default as ContactIcons } from './ContactIcons'
 export { default as PageContainer } from './PageContainer'
 export { default as Badge } from './Badge'
@@ -11,3 +13,4 @@ export { default as Button } from './Button'
 export { default as Paper } from './Paper'
 export { default as AccentElement } from './AccentElement'
 export { default as Preloader } from './Preloader'
+export { default as MenuToggle } from './MenuToggle'

@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: ${primaryFontFamily};
     color: ${({ theme }) => theme.colors.text.title};
-    background-color: ${({ theme }) => theme?.colors?.bg?.background};
+    background-color: ${({ theme }) => theme?.colors?.background};
     scrollbar-color: ${({ theme }) => theme?.colors?.border?.border} ${({
   theme,
 }) => theme?.colors?.border};

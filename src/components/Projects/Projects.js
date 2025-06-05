@@ -78,8 +78,10 @@ const Projects = () => {
               as="a"
               href="https://github.com/VitaKoval?tab=repositories"
               target="_blank"
-              title="More in GitHub"
-            />
+              icon
+            >
+              More in GitHub
+            </Button>
           </Flex>
           <Slider slides={slides} onClick={handleSlideNavigate} />
           {/* <ProjectList /> */}

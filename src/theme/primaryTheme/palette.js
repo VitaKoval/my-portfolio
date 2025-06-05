@@ -1,8 +1,12 @@
 const palette = {
+  background: '#000',
   foreground: '#fff',
+  gray: 'hsl(0deg 0% 3.92%)',
   accents2: '#333333',
   accents5: '#888888',
   accents8: '#fafafa',
+  hoverBg: 'hsl(0, 0%, 80%)',
+  bgGray200: 'hsla(0,0%,12%,1)',
   text: {
     //next's theme
     white: '#fff',
@@ -27,7 +31,7 @@ const palette = {
   bg: {
     //next's theme
     dark: 'rgba(0, 0, 0, .8)',
-    background: '#000',
+    // background: '#000',
 
     //old theme
     paper: '#FFF',
@@ -51,7 +55,7 @@ const palette = {
   border: {
     //next's theme
     dark: 'rgba(0, 0, 0, .8)',
-    background: '#000',
+    // background: '#000',
 
     //old theme
 

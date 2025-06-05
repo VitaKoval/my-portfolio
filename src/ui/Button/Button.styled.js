@@ -1,36 +1,80 @@
 import styled from 'styled-components'
 import css from '@styled-system/css'
-import { Flex } from '@/ui'
+import { variant } from 'styled-system'
 
-export const ButtonWrap = styled(Flex)(
+export const variants = {
+  primary: {
+    color: 'accents2',
+    bg: 'accents8',
+    borderColor: 'accents8',
+    '&:hover, &:active': {
+      bg: 'hoverBg',
+      borderColor: 'hoverBg',
+    },
+    '&:focus-visible': {
+      outline: 'none',
+      borderColor: 'hoverBg',
+      bg: 'hoverBg',
+    },
+    '&:disabled': {
+      bg: 'accents2',
+      color: 'accents5',
+      cursor: 'default',
+    },
+  },
+  secondary: {
+    color: 'accents8',
+    bg: 'gray',
+    borderColor: 'gray',
+    '&:hover, &:active': {
+      outline: 'none',
+      bg: 'bgGray200',
+      borderColor: 'bgGray200',
+    },
+    '&:focus-visible': {
+      outline: 'none',
+      borderColor: 'bgGray200',
+      bg: 'bgGray200',
+    },
+    '&:disabled': {
+      color: 'accents5',
+      bg: 'bgGray200',
+      cursor: 'default',
+    },
+  },
+  alternative: {
+    color: 'accents8',
+    bg: 'transparent',
+    borderColor: 'transparent',
+  },
+}
+
+export const size = {
+  small: {
+    borderRadius: '6px',
+    px: '12px',
+    pr: '12px',
+    height: '32px',
+  },
+}
+
+export const ButtonBase = styled.button(
   css({
+    display: 'flex',
+    position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
     gap: 2,
     fontFamily: 'Metropolis',
-    color: 'text.title',
-    fontSize: 'xs',
-    lineHeight: '1.25',
-    fontWeight: 'semiBold',
-    borderRadius: '3.125rem',
-    border: '2px solid',
-    borderColor: 'border.primary',
+    border: '1px solid',
     cursor: 'pointer',
     textDecoration: 'none',
-    bg: 'bg.paper',
-
-    px: 3,
-    pr: 4,
-    height: '3rem',
-    transition: '.3s',
+    outline: 'none',
+    transition: '.2s',
     ['svg']: {
-      transition: '.3s',
-    },
-    '&:hover': {
-      bg: 'bg.hover',
-      ['svg']: {
-        transform: 'translateX(4px)',
-      },
+      transition: '.2s',
     },
   }),
+  variant({ variants }),
+  variant({ prop: 'size', variants: size }),
 )
