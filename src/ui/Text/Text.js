@@ -20,37 +20,47 @@ const style = system({
 const styleText = compose(color, space, typography, layout, shadow, style)
 
 export const variants = {
-  body24b: {
-    fontSize: '1.5rem',
-    lineHeight: '1.025',
-    fontWeight: 'semiBold',
+  bodyReg: {
+    fontSize: 'max(15px, min(2vw, 20px))',
+    lineHeight: '1.8',
+    fontWeight: 'light',
   },
-  body20r: {
-    fontSize: 'xl',
-    lineHeight: '1.25',
-    fontWeight: 'regular',
+  monoReg: {
+    fontFamily: 'Geist Mono !important',
+    fontSize: '13px',
+    lineHeight: '1.8',
   },
-  body18b: {
-    fontSize: 'lg',
-    lineHeight: '1.25',
-    fontWeight: 'semiBold',
-  },
-  body14r: {
-    fontSize: 'xs',
-    lineHeight: '1.25',
-    fontWeight: 'regular',
-  },
-  body11r: {
-    fontSize: '0.688rem',
-    lineHeight: '1.025',
-    fontWeight: 'regular',
-  },
+  // body24b: {
+  //   fontSize: '1.5rem',
+  //   lineHeight: '1.025',
+  //   fontWeight: 'semiBold',
+  // },
+  // body20r: {
+  //   fontSize: 'xl',
+  //   lineHeight: '1.25',
+  //   fontWeight: 'regular',
+  // },
+  // body18b: {
+  //   fontSize: 'lg',
+  //   lineHeight: '1.25',
+  //   fontWeight: 'semiBold',
+  // },
+  // body14r: {
+  //   fontSize: 'xs',
+  //   lineHeight: '1.25',
+  //   fontWeight: 'regular',
+  // },
+  // body11r: {
+  //   fontSize: '0.688rem',
+  //   lineHeight: '1.025',
+  //   fontWeight: 'regular',
+  // },
 
-  caption: {
-    fontSize: 'xs',
-    lineHeight: '0.75rem',
-    fontWeight: 'medium',
-  },
+  // caption: {
+  //   fontSize: 'xs',
+  //   lineHeight: '0.75rem',
+  //   fontWeight: 'medium',
+  // },
 }
 
 const Text = styled.p.withConfig({
@@ -68,9 +78,13 @@ const Text = styled.p.withConfig({
   }),
   css({
     fontFamily: 'Metropolis',
-    color: 'text.title',
+    color: 'accents5',
     padding: 0,
     margin: 0,
+    ['strong']: {
+      color: 'accents8',
+      fontWeight: 'regular',
+    },
   }),
   styleText,
   ({ sx }) => sx,
@@ -92,7 +106,7 @@ Text.propTypes = {
 }
 
 Text.defaultProps = {
-  variant: 'body20r',
+  variant: 'bodyReg',
 }
 
 export default Text

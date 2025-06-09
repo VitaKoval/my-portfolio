@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  Hero,
   Intro,
   Technologies,
   Projects,
@@ -12,10 +13,11 @@ import { Flex, Paper, Box } from '@/ui'
 const MainPage = () => {
   return (
     <>
-      <Intro />
-      <Technologies />
-      <Projects />
-      <Flex px={4} column>
+      <Hero />
+      {/* <Intro /> */}
+      {/* <Technologies /> */}
+      {/* <Projects /> */}
+      {/* <Flex px={4} column>
         <Paper variant="section" px={10}>
           <Summary />
           <WorkExperience />
@@ -23,8 +25,8 @@ const MainPage = () => {
             <Overview />
           </Paper>
         </Paper>
-      </Flex>
-      <Box height="364px"></Box>
+      </Flex> */}
+      {/* <Box height="364px"></Box> */}
     </>
   )
 }

@@ -14,9 +14,9 @@ import {
 
 export const variants = ({ secondary } = false) => ({
   h1: {
-    fontSize: secondary ? '5rem' : '4rem',
-    lineHeight: '0.94',
-    fontWeight: 'semiBold',
+    fontSize: 'max(48px, min(5vw, 76px))',
+    lineHeight: '1.0',
+    fontWeight: 'bold',
   },
   h2: {},
   h3: {
@@ -44,6 +44,14 @@ const tagVariants = {
   h4: 'h4',
 }
 
+const styledColor = {
+  gradient: {
+    background: 'linear-gradient(180deg, #ffffff, #adadad)',
+    '-webkit-background-clip': 'text',
+    '-webkit-text-fill-color': 'transparent',
+  },
+}
+
 const StyleHeading = compose(space, color, typography, shadow, layout, style)
 
 export const Heading = styled.h3
@@ -58,7 +66,7 @@ export const Heading = styled.h3
     ...(preLine && { whiteSpace: 'pre-line' }),
   }),
   css(({ color }) => ({
-    color: 'foreground',
+    color: color ? color : 'foreground',
     padding: 0,
     margin: 0,
   })),
@@ -67,6 +75,10 @@ export const Heading = styled.h3
       prop: 'variant',
       variants: variants({ secondary }),
     }),
+  variant({
+    prop: 'styledColor',
+    variants: styledColor,
+  }),
   StyleHeading,
   ({ sx }) => sx,
 )

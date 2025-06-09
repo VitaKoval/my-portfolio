@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Metropolis';
   src: url('metropolis-bold-webfont.woff2') format('woff2'),
-       url('metropolis-bold-webfont.woff') format('woff'),
-       url('metropolis-bold-webfont.ttf') format('truetype'),
-       url('Metropolis-Bold.otf') format('opentype');
+    url('metropolis-bold-webfont.woff') format('woff'),
+    url('metropolis-bold-webfont.ttf') format('truetype'),
+    url('Metropolis-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
@@ -11,9 +11,9 @@
 @font-face {
   font-family: 'Metropolis';
   src: url('metropolis-semibold-webfont.woff2') format('woff2'),
-       url('metropolis-semibold-webfont.woff') format('woff'),
-       url('metropolis-semibold-webfont.ttf') format('truetype'),
-       url('Metropolis-SemiBold.otf') format('opentype');
+    url('metropolis-semibold-webfont.woff') format('woff'),
+    url('metropolis-semibold-webfont.ttf') format('truetype'),
+    url('Metropolis-SemiBold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
@@ -21,9 +21,9 @@
 @font-face {
   font-family: 'Metropolis';
   src: url('metropolis-medium-webfont.woff2') format('woff2'),
-       url('metropolis-medium-webfont.woff') format('woff'),
-       url('metropolis-medium-webfont.ttf') format('truetype'),
-       url('Metropolis-Medium.otf') format('opentype');
+    url('metropolis-medium-webfont.woff') format('woff'),
+    url('metropolis-medium-webfont.ttf') format('truetype'),
+    url('Metropolis-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
@@ -31,9 +31,9 @@
 @font-face {
   font-family: 'Metropolis';
   src: url('metropolis-regular-webfont.woff2') format('woff2'),
-       url('metropolis-regular-webfont.woff') format('woff'),
-       url('metropolis-regular-webfont.ttf') format('truetype'),
-       url('Metropolis-Regular.otf') format('opentype');
+    url('metropolis-regular-webfont.woff') format('woff'),
+    url('metropolis-regular-webfont.ttf') format('truetype'),
+    url('Metropolis-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -41,10 +41,15 @@
 @font-face {
   font-family: 'Metropolis';
   src: url('Metropolis-Light.otf');
-  src:
-      local('Metropolis Light'),
-      local('Metropolis-Light'),
-      url('Metropolis-Light.otf') format('opentype');
+  src: local('Metropolis Light'), local('Metropolis-Light'),
+    url('Metropolis-Light.otf') format('opentype');
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('GeistMono-Regular.ttf');
+  font-weight: 400;
   font-style: normal;
 }

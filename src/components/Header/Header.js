@@ -8,11 +8,13 @@ import MobileTopHeader from './MobileTopHeader'
 function Header() {
   return (
     <HeaderWrap>
-      <NavBarNav>
-        <MobileTopHeader />
-        <DesktopTopHeader />
-        <NavBarHeaderButtons />
-      </NavBarNav>
+      <PageContainer>
+        <NavBarNav>
+          <MobileTopHeader />
+          <DesktopTopHeader />
+          <NavBarHeaderButtons />
+        </NavBarNav>
+      </PageContainer>
     </HeaderWrap>
   )
 }

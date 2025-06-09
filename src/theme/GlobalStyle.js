@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const primaryFontFamily = "'Metropolis', sans-serif"
+export const secondaryFontFamily = "'Geist Mono', sans-serif"
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -8,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: ${primaryFontFamily};
-    color: ${({ theme }) => theme.colors.text.title};
+    color: ${({ theme }) => theme?.colors?.foreground};
     background-color: ${({ theme }) => theme?.colors?.background};
     scrollbar-color: ${({ theme }) => theme?.colors?.border?.border} ${({
   theme,
