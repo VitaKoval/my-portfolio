@@ -10,7 +10,6 @@ export const HeaderWrap = styled(Flex)(
     alignItems: 'center',
     width: '100%',
     zIndex: 1000,
-    padding: '0 24px',
     height: '64px',
     boxShadow: 'inset 0 -1px 0 0 #333333',
     transform: 'translateZ(0)',
