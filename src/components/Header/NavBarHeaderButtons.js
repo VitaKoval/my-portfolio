@@ -10,7 +10,7 @@ function NavBarHeaderButtons() {
         <GrGithub size="16" />
       </Link>
       <hr />
-      <Link to="www.linkedin.com/in/vita-koval-dev" target="_blank">
+      <Link to="https://linkedin.com/in/vita-koval-dev" target="_blank">
         <GrLinkedinOption size="16" />
       </Link>
     </NavButtonsWrap>

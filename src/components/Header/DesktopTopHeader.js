@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Logo } from '../../ui'
-import Text from '../../ui/Text/Text'
 import { navList } from './definitions'
 import { NavBarLinks, NavBarNav, NavListItem } from './Header.styled'
 
