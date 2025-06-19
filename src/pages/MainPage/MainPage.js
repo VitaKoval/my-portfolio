@@ -1,12 +1,13 @@
 import React from 'react'
 import {
   Hero,
-  Intro,
-  Technologies,
-  Projects,
-  Summary,
-  WorkExperience,
-  Overview,
+  TechStack,
+  // Intro,
+  // Technologies,
+  // Projects,
+  // Summary,
+  // WorkExperience,
+  // Overview,
 } from '@/components'
 import { Flex, Paper, Box } from '@/ui'
 
@@ -14,6 +15,7 @@ const MainPage = () => {
   return (
     <>
       <Hero />
+      <TechStack />
       {/* <Intro /> */}
       {/* <Technologies /> */}
       {/* <Projects /> */}

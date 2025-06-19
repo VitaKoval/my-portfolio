@@ -18,7 +18,11 @@ export const variants = ({ secondary } = false) => ({
     lineHeight: '1.0',
     fontWeight: 'bold',
   },
-  h2: {},
+  h2: {
+    fontSize: '32px',
+    lineHeight: '1.25',
+    fontWeight: 'bold',
+  },
   h3: {
     fontSize: '40px',
     lineHeight: '0.94',

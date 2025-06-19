@@ -3,6 +3,7 @@ const palette = {
   foreground: '#fff',
   gray: 'hsl(0deg 0% 3.92%)',
   accents2: '#333333',
+  accents3: '#444444',
   accents5: '#888888',
   accents8: '#fafafa',
   hoverBg: 'hsl(0, 0%, 80%)',

@@ -30,6 +30,11 @@ export const variants = {
     fontSize: '13px',
     lineHeight: '1.8',
   },
+  smallReg: {
+    fontSize: '14px',
+    lineHeight: '1.5',
+    color: 'accents-5',
+  },
   // body24b: {
   //   fontSize: '1.5rem',
   //   lineHeight: '1.025',
