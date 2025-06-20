@@ -2,6 +2,7 @@ import React from 'react'
 import {
   Hero,
   TechStack,
+  Work,
   // Intro,
   // Technologies,
   // Projects,
@@ -16,6 +17,7 @@ const MainPage = () => {
     <>
       <Hero />
       <TechStack />
+      <Work />
       {/* <Intro /> */}
       {/* <Technologies /> */}
       {/* <Projects /> */}

@@ -56,6 +56,13 @@ export const size = {
     pr: '12px',
     height: '32px',
   },
+  big: {
+    borderRadius: '8px',
+    px: '14px',
+    py: '12px',
+    height: '48px',
+    fontSize: '16px',
+  },
 }
 
 export const ButtonBase = styled.button(

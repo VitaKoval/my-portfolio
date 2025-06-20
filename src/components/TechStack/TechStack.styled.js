@@ -7,7 +7,6 @@ export const TachStackSection = styled.section(
     position: 'relative',
     width: '100%',
     overflow: 'hidden',
-    // color: 'accents5',
     marginBottom: ['140px', '205px'],
   }),
 )
@@ -39,6 +38,9 @@ export const TechItemContainer = styled(Flex)(
       background: 'rgba(255, 255, 255, 0.02)',
     },
     svg: {
+      filter: 'invert(1)',
+      opacity: '0.4',
+      color: 'accents2',
       width: ['42px', '56px'],
       height: 'auto',
     },
