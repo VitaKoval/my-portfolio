@@ -5,9 +5,38 @@ import {
   TechItemContainer,
   TechListWrap,
 } from './TechStack.styled'
-import { techStack } from './definitions'
+import { techStack, techStackShort } from './definitions'
+import ContentToggle from '@/ui/ContentToggle'
 
 function TechStack(props) {
+  const visibleContent = (
+    <TechListWrap>
+      {techStackShort.map(({ title, subtitle, Icon }) => (
+        <TechItemContainer key={title}>
+          {Icon && <Icon />}
+          <Flex column flex="1">
+            <Text color="foreground">{title}</Text>
+            <Text variant="smallReg">{subtitle}</Text>
+          </Flex>
+        </TechItemContainer>
+      ))}
+    </TechListWrap>
+  )
+
+  const hiddenContent = (
+    <TechListWrap>
+      {techStack.map(({ title, subtitle, Icon }) => (
+        <TechItemContainer key={title}>
+          {Icon && <Icon />}
+          <Flex column flex="1">
+            <Text color="foreground">{title}</Text>
+            <Text variant="smallReg">{subtitle}</Text>
+          </Flex>
+        </TechItemContainer>
+      ))}
+    </TechListWrap>
+  )
+
   return (
     <TachStackSection>
       <PageContainer>
@@ -21,15 +50,19 @@ function TechStack(props) {
           </Text>
         </Flex>
         <TechListWrap>
-          {techStack.map(({ title, subtitle, Icon }) => (
-            <TechItemContainer>
+          <ContentToggle
+            visibleContent={visibleContent}
+            hiddenContent={hiddenContent}
+          />
+          {/* {techStack.map(({ title, subtitle, Icon }) => (
+            <TechItemContainer key={title}>
               {Icon && <Icon />}
               <Flex column flex="1">
                 <Text color="foreground">{title}</Text>
                 <Text variant="smallReg">{subtitle}</Text>
               </Flex>
             </TechItemContainer>
-          ))}
+          ))} */}
         </TechListWrap>
       </PageContainer>
     </TachStackSection>

@@ -199,3 +199,26 @@ export const techStack = [
     Icon: SiGoogleads,
   },
 ]
+
+export const techStackShort = [
+  {
+    title: 'JavaScript',
+    subtitle: 'Programming language',
+    Icon: SiJavascript,
+  },
+  {
+    title: 'React',
+    subtitle: 'JavaScript Library',
+    Icon: SiReact,
+  },
+  {
+    title: 'NextJS',
+    subtitle: 'React framework',
+    Icon: SiNextdotjs,
+  },
+  {
+    title: 'TanStack Query',
+    subtitle: 'Asynchronous State Management',
+    Icon: SiReactquery,
+  },
+]

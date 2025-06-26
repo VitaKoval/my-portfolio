@@ -15,3 +15,5 @@ export { default as AccentElement } from './AccentElement'
 export { default as Preloader } from './Preloader'
 export { default as MenuToggle } from './MenuToggle'
 export { default as MobileMenu } from './MobileMenu'
+
+export { default as ContentToggle } from './ContentToggle'

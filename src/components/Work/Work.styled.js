@@ -18,6 +18,7 @@ export const PreviewListContainer = styled(Flex)(
   css({
     alignItems: 'center',
     justifyContent: 'center',
+    flexWrap: 'wrap',
     width: '100%',
     gap: '32px',
     '&::after': {

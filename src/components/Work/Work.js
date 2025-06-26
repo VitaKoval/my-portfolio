@@ -6,8 +6,8 @@ import {
   PreviewItem,
   WorkActionsContainer,
 } from './Work.styled'
-import Item1 from '../../assets/images/puzzle-intro-1.png'
-import { Button, PageContainer } from '../../ui'
+import Item1 from '@/assets/images/puzzle-intro-1.png'
+import { Button, ContentToggle, PageContainer } from '@/ui'
 
 function Work(props) {
   return (
@@ -23,38 +23,18 @@ function Work(props) {
           </Text>
         </Flex>
         <PreviewListContainer>
-          <Flex column gap="32px">
-            <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem>
-            {/* <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem> */}
-          </Flex>
-          <Flex column gap="32px">
-            <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem>
-            {/* <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem> */}
-          </Flex>
-          <Flex column gap="32px">
-            <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem>
-            {/* <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem> */}
-          </Flex>
-          <Flex column gap="32px">
-            <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem>
-            {/* <PreviewItem>
-              <Img src={Item1} variant="cover" />
-            </PreviewItem> */}
-          </Flex>
+          <PreviewItem>
+            <Img src={Item1} variant="cover" />
+          </PreviewItem>
+          <PreviewItem>
+            <Img src={Item1} variant="cover" />
+          </PreviewItem>
+          <PreviewItem>
+            <Img src={Item1} variant="cover" />
+          </PreviewItem>
+          <PreviewItem>
+            <Img src={Item1} variant="cover" />
+          </PreviewItem>
         </PreviewListContainer>
         <WorkActionsContainer variant="columnCenter">
           <Text>
