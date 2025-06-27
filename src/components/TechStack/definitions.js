@@ -40,6 +40,7 @@ import { BsFiletypeJson } from 'react-icons/bs'
 import { VscVscodeInsiders } from 'react-icons/vsc'
 
 export const techStack = [
+  // Main stack
   {
     title: 'JavaScript',
     subtitle: 'Programming language',
@@ -61,25 +62,16 @@ export const techStack = [
     Icon: SiReactquery,
   },
   {
-    title: 'Styled-Components',
-    subtitle: 'CSS-in-JS library for React',
-    Icon: SiStyledcomponents,
+    title: 'Node.js',
+    subtitle: 'JavaScript Runtime',
+    Icon: SiNodedotjs,
   },
   {
     title: 'WordPress',
     subtitle: 'Content Management System (CMS)',
     Icon: SiWordpress,
   },
-  {
-    title: 'Git',
-    subtitle: 'Version Control System',
-    Icon: SiGit,
-  },
-  {
-    title: 'Figma',
-    subtitle: 'Design Tool',
-    Icon: SiFigma,
-  },
+  // Additional
   {
     title: 'TypeScript',
     subtitle: '',
@@ -100,6 +92,22 @@ export const techStack = [
     subtitle: '',
     Icon: SiSass,
   },
+  {
+    title: 'Styled-Components',
+    subtitle: 'CSS-in-JS library for React',
+    Icon: SiStyledcomponents,
+  },
+  {
+    title: 'Git',
+    subtitle: 'Version Control System',
+    Icon: SiGit,
+  },
+  {
+    title: 'Figma',
+    subtitle: 'Design Tool',
+    Icon: SiFigma,
+  },
+
   {
     title: 'JSON',
     subtitle: '',
@@ -144,11 +152,6 @@ export const techStack = [
   },
 
   // Back-End & APIs
-  {
-    title: 'Node.js',
-    subtitle: 'JavaScript Runtime',
-    Icon: SiNodedotjs,
-  },
   {
     title: 'Axios',
     subtitle: 'Promise-based HTTP Client',
@@ -220,5 +223,15 @@ export const techStackShort = [
     title: 'TanStack Query',
     subtitle: 'Asynchronous State Management',
     Icon: SiReactquery,
+  },
+  {
+    title: 'Node.js',
+    subtitle: 'JavaScript Runtime',
+    Icon: SiNodedotjs,
+  },
+  {
+    title: 'WordPress',
+    subtitle: 'Content Management System (CMS)',
+    Icon: SiWordpress,
   },
 ]

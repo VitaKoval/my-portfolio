@@ -4,10 +4,16 @@ import { Flex, Text } from '@/ui'
 
 export const TachStackSection = styled.section(
   css({
-    position: 'relative',
     width: '100%',
-    overflow: 'hidden',
-    marginBottom: ['140px', '205px'],
+    marginBottom: ['80px', '40px'],
+  }),
+)
+
+export const TachStackTitleContainer = styled(Flex)(
+  css({
+    flexDirection: 'column',
+    textAlign: 'center',
+    marginBottom: '40px',
   }),
 )
 
@@ -16,7 +22,6 @@ export const TechListWrap = styled(Flex)(
     justifyContent: 'center',
     gap: '1rem',
     flexWrap: 'wrap',
-    marginTop: '48px',
   }),
 )
 

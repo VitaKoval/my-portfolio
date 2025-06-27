@@ -1,46 +1,22 @@
 import React from 'react'
-import { PageContainer, Flex, Heading, Text, Img } from '@/ui'
+import { PageContainer, Heading, Text } from '@/ui'
 import {
   TachStackSection,
-  TechItemContainer,
+  TachStackTitleContainer,
   TechListWrap,
 } from './TechStack.styled'
-import { techStack, techStackShort } from './definitions'
-import ContentToggle from '@/ui/ContentToggle'
+import { techStack } from './definitions'
+import ContentToggle from '../../ui/ContentToggle'
+import TechStackItems from './TechStackItems'
 
-function TechStack(props) {
-  const visibleContent = (
-    <TechListWrap>
-      {techStackShort.map(({ title, subtitle, Icon }) => (
-        <TechItemContainer key={title}>
-          {Icon && <Icon />}
-          <Flex column flex="1">
-            <Text color="foreground">{title}</Text>
-            <Text variant="smallReg">{subtitle}</Text>
-          </Flex>
-        </TechItemContainer>
-      ))}
-    </TechListWrap>
-  )
-
-  const hiddenContent = (
-    <TechListWrap>
-      {techStack.map(({ title, subtitle, Icon }) => (
-        <TechItemContainer key={title}>
-          {Icon && <Icon />}
-          <Flex column flex="1">
-            <Text color="foreground">{title}</Text>
-            <Text variant="smallReg">{subtitle}</Text>
-          </Flex>
-        </TechItemContainer>
-      ))}
-    </TechListWrap>
-  )
+function TechStack() {
+  const visibleContent = techStack.slice(0, 6)
+  const hiddenContent = techStack.slice(6)
 
   return (
     <TachStackSection>
       <PageContainer>
-        <Flex variant="columnCenter">
+        <TachStackTitleContainer>
           <Heading variant="h2" styledColor="gradient">
             What’s in My Stack?
           </Heading>
@@ -48,21 +24,12 @@ function TechStack(props) {
             Everything I use to build fast, modern, and user-friendly web
             products.
           </Text>
-        </Flex>
+        </TachStackTitleContainer>
         <TechListWrap>
           <ContentToggle
-            visibleContent={visibleContent}
-            hiddenContent={hiddenContent}
+            visibleContent={TechStackItems(visibleContent)}
+            hiddenContent={TechStackItems(hiddenContent)}
           />
-          {/* {techStack.map(({ title, subtitle, Icon }) => (
-            <TechItemContainer key={title}>
-              {Icon && <Icon />}
-              <Flex column flex="1">
-                <Text color="foreground">{title}</Text>
-                <Text variant="smallReg">{subtitle}</Text>
-              </Flex>
-            </TechItemContainer>
-          ))} */}
         </TechListWrap>
       </PageContainer>
     </TachStackSection>
